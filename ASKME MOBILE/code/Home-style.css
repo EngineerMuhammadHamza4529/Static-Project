@@ -1,0 +1,135 @@
+
+
+*{
+    box-sizing: border-box;
+}
+/* ---------Scrollup------------ */
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    background-image: url(Images/Scrollup.png);
+    height: 38px;
+    width: 38px;
+}
+
+/* -----------Header----------- */
+.nav-link{
+    color: white;
+    margin-right:  50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link:hover{
+    color: red;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    color: red;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.navbar-brand span{
+    color: red;
+}
+/* --------Animated Slider---------- */
+#animatedSlide{
+    cursor: pointer;
+}
+/* -------------Main Slide------------ */
+#myCarousel{
+    cursor: pointer;
+    width: 100%;
+}
+/* ---------Product-------------------------- */
+#product h1{
+    font-weight: bolder;
+    text-align: center;
+}
+#product .card{
+    box-shadow: 1px 1px 10px rgb(202, 201, 201);
+}
+.card-body h4{
+    text-align: center;
+}
+#price{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+}
+#price a{
+    color: black;
+    font-size: 20px;
+}
+.star{
+    text-align: center;
+    margin-top: 15px;
+}
+.star .chacked{
+    color: orange;
+}
+/* ----------Features--------- */
+#policy{
+    margin-top: 50px;
+}
+#policy i{
+    font-size: 60px;
+    color: rgb(148, 9, 9);
+}
+/* ---------Footer---------- */
+
+#content-Two{
+    background-color: black;
+    color: white;
+}
+#content-Two img{
+    padding-left: 100px;
+}
+#content-Two a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#content-Two a:hover{
+    color: rgb(187, 4, 4);
+}
+#content-Two p #fIcon:hover{
+   color: blue;
+   
+}
+#content-Two p #wIcon:hover{
+    color: green;
+ }
+#content-Two p #twIcon:hover{
+    color: skyblue;
+ }
+ #content-Two p #iIcon:hover{
+    color: yellow;
+ }
+ #copyRight p{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+ }
+
+
+@media screen and (max-width: 700px) {
+    #content-Two img{
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+ 
+
+
+

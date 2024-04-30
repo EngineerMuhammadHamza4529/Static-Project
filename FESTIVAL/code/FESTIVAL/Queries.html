@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Your Festival - Queries</title>
+    <style>
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://s3.us-west-1.wasabisys.com/ft-backgrounds/-mreflowMatt_Wolfe_a_colorful_digital_background_477e314c-c8c2-4491-88d5-1194cd417006.jpeg'); /* Replace 'your-background-image.jpg' with the actual file path or URL of your background image */
+            background-size: cover;
+            color: #333;
+        }
+
+        h1 {
+            color: #FFD700;
+            text-align: center;
+            text-decoration: underline;
+            margin-top: 110px;
+            margin-bottom: 40px;
+        }
+
+        .faq-section {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color:  rgba(0, 0, 0, 0.6); /* Background color with opacity for better readability */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 19px;
+            margin-bottom: 8px;
+            color: #FFD700;
+        }
+
+        .faq-answer {
+            color:  rgba(255, 255, 255, 0.9);
+            font-size: 17px;
+        }
+
+        /*navbar and footer*/
+        .navbar {
+  background-color: #151414;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 20px; /* Add margin to create space after the navbar */
+}
+
+.navbar-logo {
+max-height: 40px; 
+margin-left: 15px; 
+}
+
+.navbar-nav .nav-link {
+font-size: 18px;
+margin-right: 15px;
+color: #fff; 
+}
+.navbar-brand{
+  padding: 10px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 0px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          
+          <img src="logo mg3.png" alt="" class="navbar-logo">
+          
+          <a class="navbar-brand" href="#">Festival</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Muslim</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Milad un-Nabi.html">Mawlid al-Nabi</a>
+                  <a class="dropdown-item" href="Eid al-Fitr.html">Eid al-Fitr</a>
+                  <a class="dropdown-item" href="Eid al-Adha.html">Eid al-Adha</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hindu</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="holi.html">Holi</a>
+                  <a class="dropdown-item" href="dewali.html">Dewali</a>
+                  <a class="dropdown-item" href="navratri.html">Navratri</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Christian</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Chrismas.html">Christmas</a>
+                  <a class="dropdown-item" href="Easter.html">Easter</a>
+                  <a class="dropdown-item" href="New Year.html">New Year</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Queries.html">Queries</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          
+
+    <h1>Frequently Asked Questions (FAQs)</h1>
+
+    <div class="faq-section">
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What is the date of the festival?</div>
+            <div class="faq-answer">A: The festival will take place on [Date].</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How can I purchase tickets?</div>
+            <div class="faq-answer">A: Tickets can be purchased online through our website or at the event venue.</div>
+        </div>
+
+        <!-- Add more FAQs as needed -->
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I bring my own food and drinks?</div>
+            <div class="faq-answer">A: Outside food and drinks are not allowed. There will be a variety of food and beverage options available at the venue.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Is the event family-friendly?</div>
+            <div class="faq-answer">A: Yes, the festival is family-friendly, and there will be activities suitable for all ages.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I bring my own chair or blanket?</div>
+            <div class="faq-answer">A: Yes, feel free to bring your own chair or blanket for seating during performances.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Are pets allowed at the festival?</div>
+            <div class="faq-answer">A: We love pets, but for the safety and comfort of all attendees, please leave your furry friends at home.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What happens if it rains?</div>
+            <div class="faq-answer">A: The festival will proceed rain or shine. In case of severe weather, we will provide updates on our website and social media channels.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Is there parking available at the venue?</div>
+            <div class="faq-answer">A: Yes, there is parking available on-site. Please follow event signage and staff directions for parking instructions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I get a refund for my ticket if I can't attend?</div>
+            <div class="faq-answer">A: Unfortunately, we do not offer refunds. However, tickets are transferable, and you can give or sell your ticket to someone else.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Are there discounts for group bookings?</div>
+            <div class="faq-answer">A: Yes, we offer group discounts for parties of 10 or more. Contact our team for more information on group rates.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Can I volunteer at the festival?</div>
+            <div class="faq-answer">A: Yes, we welcome volunteers! Check our website for volunteer opportunities and how to apply.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Are there ATMs available on-site?</div>
+            <div class="faq-answer">A: Yes, there will be ATMs available for your convenience. However, we encourage attendees to bring cash for smaller purchases.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: What COVID-19 safety measures are in place?</div>
+            <div class="faq-answer">A: We prioritize the safety of our attendees. Please refer to our COVID-19 guidelines on our website for information on safety protocols and measures in place.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How can I become a vendor at the festival?</div>
+            <div class="faq-answer">A: If you're interested in becoming a vendor, please visit the "Vendor Information" section on our website for details on the application process.</div>
+        </div>
+
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>Festival@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="logo mg3.png"><img src="logo mg3.png" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>At Festival Showcase, we are a passionate team dedicated to curating unforgettable festival experiences that celebrate diversity and create lasting memories.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Eid al-Fitr.html">Eid al-Fitr</a></li>                           
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="Milad un-Nabi.html">Milad un Nabi</a></li>                        
+                                <li><a href="index.html">Our Services</a></l>
+                                <li><a href="contactus.html">Contact</a></li>
+                                <li><a href="index.html">Testimonial</a></li>
+                                <li><a href="Eid al-Adha.html">Eid al-Adha</a></li>
+                                <li><a href="Queries.html">Queries</a></li>
+                                <li><a href="holi.html">Holi</a></li>
+                                <li><a href="dewali.html">Diwali</a></li>
+                                <li><a href="Chrismas.html">Christmas</a></li>
+                                <li><a href="Easter.html">Easter</a></li>
+                                <li><a href="New Year.html">New Year</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    
+</body>
+</html>

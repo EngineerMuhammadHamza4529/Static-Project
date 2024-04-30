@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ---------Scrollup------------ */
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    background-image: url(Images/Scrollup.png);
+    height: 38px;
+    width: 38px;
+}
+/* -----------Header----------- */
+.nav-link{
+    color: white;
+    margin-right: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link:hover{
+    color: red;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    color: red;
+    font-weight: bold;
+}
+.navbar-brand{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.navbar-brand span{
+    color: red;
+}
+/* ------------------iPhone Product CARD-------------------- */
+#product-cards{
+    margin-top: 100px;
+}
+#product-cards .card{
+    box-shadow: 2px 2px 5px rgb(202, 201, 201);
+}
+#product-cards h1{
+    text-shadow: 1px 1px 1px rgb(97, 94, 94);
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 5px solid red ;
+    padding-bottom: 10px;
+}
+#product-cards h1 span{
+    color: red;
+    font-weight: bolder;
+}
+#product-cards .card img{
+    padding: 20px;
+}
+#product-cards .card h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+#product-cards .card p{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price div h4{
+    color: red;
+}
+.price div h6 span{
+    text-decoration: line-through;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star .chacked{
+    color: orange;
+}
+
+
+
+/* ---------Footer---------- */
+#content-Two{
+    background-color: black;
+    color: white; 
+    margin-top: 50px;
+}
+#content-Two img{
+    padding-left: 100px;
+}
+#content-Two a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#content-Two a:hover{
+    color: rgb(187, 4, 4);
+}
+#content-Two p #fIcon:hover{
+   color: blue;
+   
+}
+#content-Two p #wIcon:hover{
+    color: green;
+ }
+#content-Two p #twIcon:hover{
+    color: skyblue;
+ }
+ #content-Two p #iIcon:hover{
+    color: yellow;
+ }
+ #copyRight p{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+ }
+
+@media screen and (max-width: 1200px) {
+    #product-cards .card h3{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #product-cards .card-body p{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+}
+@media screen and (max-width: 990px ) {
+    #product-cards .card h3{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #product-cards .card-body p{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #content-Two img{
+        padding-left: 0;
+    }
+    #product-cards h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #product-cards h1{
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jquery-backToTop -->
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="themes.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="effects.css" media="screen">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>EYEONIC</title>
+</head>
+<body>
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+        <img src="images\eyelogo.jpg" alt="site icon">
+        <span class="text-uppercase fw-lighter ms-2 fw-bold">eyeonic</span>
+      </a>
+
+      <div class="order-lg-2 nav-btns">
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-search" id="search-btn"></i>
+        </button>
+        <form action="" class="search-form bg-light">
+          <input type="search" class="form-control w-100 h-100 border-0" id="search-box" placeholder="search here">
+        </form>
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-heart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+        </button>
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+        </button>
+        
+        
+      </div>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item px-2 py-2">
+            <a href="index.html" class="nav-link text-uppercase text-dark fw-bold">Home</a>
+          </li>
+              <li class="nav-item dropdown px-2 py-2">
+                <a class="nav-link dropdown-toggle text-uppercase text-dark fw-bold" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Frames
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="ray-ban.html">Ray-Ban</a></li>
+                  <li><a class="dropdown-item" href="nike.html">Nike</a></li>
+                  <li><a class="dropdown-item" href="calvin.html">Calvin Klein</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="lenses.html" class="nav-link text-uppercase text-dark fw-bold">Contact Lenses</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="sunglasses.html" class="nav-link text-uppercase text-dark fw-bold">SunGlasses</a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="compare.html" class="nav-link text-uppercase text-dark fw-bold">Comparison</a>
+              </li>
+          <li class="nav-item px-2 py-2 border-0">
+            <a href="contact.html" class="nav-link text-uppercase text-dark fw-bold">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+
+  <!-- header -->
+  <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center carousel-inner">
+      <div class="carousel-item active">
+        <h2 class="text-capitalize text-danger">best collection</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-primary">new arrivals</h1>
+        <a href="ray-ban.html" class="btn mt-3 text-uppercase">shop now</a>
+      </div>
+      <div class="carousel-item">
+        <h2 class="text-capitalize text-primary">best price & offer</h2>
+        <h1 class="text-uppercase py-2 fw-bold text-danger">new season</h1>
+        <a href="nike.html" class="btn mt-3 text-uppercase">buy now</a>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </header>
+  <!-- end of header -->
+
+     <div class="container-fluid">
+     <div class="row">
+      <div class="col-md-12">
+    <section class="text-center class">
+      <p>Welcome to <strong> EYEONIC,</strong> where style meets with design and affordability! Explore our stylish <strong> eyeglass frames </strong> with the best <strong> eyeglasses prices in Pakistan. </strong> With the convenience of internet buying, you can elevate your vision. Find the ideal combination of eyeglasses to show your style without going over budget. <strong> Your first choice for stylish, reasonably priced glasses! </strong></p>
+    </section>
+  </div>
+</div>
+</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 class1 justify-content-between align-content-center">
+          <a href="ray-ban.html">
+            <img src="ray-ban images/ray-ban-logo.png" alt="" width="250px" height="165px">
+          </a>
+        </div>
+        <div class="col-md-4 class1">
+          <a href="nike.html">
+            <img src="nike-imges/Nike-Logo.png" alt="" width="250px" height="165px">
+          </a>
+        </div>
+        <div class="col-md-4 class1">
+          <a href="calvin.html">
+            <img src="calvin images/calvin-logo.jpg" alt="" width="250px" height="165px">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+    <section class="text-center product">
+      <h2><b> TOP SELLING PRODUCTS</b></h2>
+      <p>The most excellent online eyeglasses and eyeglass frames are offered at EYEONIC, your one-stop online store. We offer a wide range of high-quality items because we know how important it is for you to access stylish and affordable eyewear. We provide options for everyone, whether you need prescription or non-prescription sunglasses. Finding the ideal set of eyeglasses frames that fit your style, personality, and budget is simple with the help of our easy-to-use website. We have everything you want, glasses from timelessly elegant designs to the newest techniques.</p>
+    </section>
+  </div>
+</div>
+</div>
+
+
+     <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+    
+<!-- Button trigger modal -->
+<!-- <button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+<div class="card">
+  <img src="ray-ban images\img1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RAY-BAN RB7190 2000</h5>
+    <p class="card-text">Rs.25,200.00 PKR</p>
+    <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+      <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+  </div>
+</div>
+<!-- </button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <img src="ray-ban images\img1.webp" alt="" width="100%">
+    </div>
+    
+      <div class="zero">
+      <h3 class="fw-bold text-primary">RAY-BAN</h3>
+      <h5 class="8056597958257__STD__shad__qt.avif">RAY-BAN RB7190 2000</h5>
+      <span class="text-danger">Rs.25,200.00 PKR</span>
+    </div> <hr>
+    <div class="zero">
+      <p class="fw-bold fs-4 text-primary">Details:</p>
+      <p class="">Model Number:	RX7190 <br>
+        Frame Color:	Black<br>
+        Color Code:	2000<br>
+        Frame Type:	Full Rim<br>
+        Frame Shape:	Square<br>
+        Material:	Acetate<br>
+        Lens Width:	51mm<br>
+        Lens Height:	43mm<br>
+        Bridge Size:	19mm<br>
+        Temple Length:	140mm</p>
+      </div>
+    
+    <div class="modal-footer">
+     <!-- <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a> -->
+      <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+      <div class="col-md-4">
+        <!-- Button trigger modal -->
+<button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <div class="card">
+    <img src="ray-ban images\img2.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">RAY-BAN RB 2199V 8117</h5>
+      <p class="card-text">Rs.37,200.00 PKR</p>
+      <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+      <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+    </div>
+  </div>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="ray-ban images\img2.webp" alt="" width="100%">
+      </div>
+      
+        <div class="zero">
+        <h3 class="fw-bold text-primary">RAY-BAN</h3>
+        <h5 class="">RAY-BAN RB 2199V 8117</h5>
+        <span class="text-danger">Rs.37,200.00 PKR</span>
+      </div> <hr>
+      <div class="zero">
+        <p class="fw-bold fs-4 text-primary">Details:</p>
+        <p class="">Model Number:	RX2199V <br>
+          Frame Colour:	Grey Havana <br>
+          Colour Code:	8117 <br>
+          Frame Type:	Full Rim <br>
+          Frame Shape:	Round <br>
+          Material:	Acetate <br>
+          Lens Width:	48mm <br>
+          Lens Height:	41mm <br>
+          Bridge Size:	22mm <br>
+          Temple Length:	145mm</p>
+        </div>
+      
+      <div class="modal-footer">
+        <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+        <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <div class="col-md-4">
+        
+          <!-- Button trigger modal -->
+          <button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="card">
+              <img src="nike-imges\img1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NIKE 5048 001</h5>
+                <p class="card-text">Rs.21,900.00 PKR</p>
+                <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+                <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+              </div>
+            </div>
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="nike-imges\img1.webp" alt="" width="100%">
+                </div>
+                
+                  <div class="zero">
+                  <h3 class="fw-bold text-primary">NIKE</h3>
+                  <h5 class="8056597958257__STD__shad__qt.avif">NIKE 5048 001</h5>
+                  <span class="text-danger">Rs.21,900.00 PKR</span>
+                </div> <hr>
+                <div class="zero">
+                  <p class="fw-bold fs-4 text-primary">Details:</p>
+                  <p class="">Model Number:	5048 <br>
+                    Frame Colour:	Matte Black<br>
+                    Colour Code:	001<br>
+                    Frame Type:	Full Rim<br>
+                    Frame Shape:	Rectangle<br>
+                    Material:	Acetate<br>
+                    Lens Width:	49mm<br>
+                    Lens Height:	33mm<br>
+                    Bridge Size:	13mm<br>
+                    Temple Length:	130mm</p>
+                  </div>
+                
+                <div class="modal-footer">
+                 <!-- <a class="btn btn-dark" href="nike.docx" type="Download">Download</a> -->
+                  <a class="btn btn-dark" href="nike-buynow.html">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+                  </div>
+                  <div class="row">
+                  <div class="col-md-4">
+                  <!-- Button trigger modal -->
+          <button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="card">
+              <img src="nike-imges\img2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">NIKE 7038 001</h5>
+                <p class="card-text">Rs.25,200.00 PKR</p>
+                <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+                <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+              </div>
+            </div>
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="nike-imges\img2.webp" alt="" width="100%">
+                </div>
+                
+                  <div class="zero">
+                  <h3 class="fw-bold text-primary">NIKE</h3>
+                  <h5 class="">NIKE 7038 001</h5>
+                  <span class="text-danger">Rs.25,200.00 PKR</span>
+                </div> <hr>
+                <div class="zero">
+                  <p class="fw-bold fs-4 text-primary">Details:</p>
+                  <p class="">Model Number:	7038 <br>
+                    Frame Colour:	Matte Black<br>
+                    Colour Code:	001<br>
+                    Frame Type:	Full Rim<br>
+                    Frame Shape:	Square<br>
+                    Material:	Acetate<br>
+                    Lens Width:	53mm<br>
+                    Lens Height:	39mm<br>
+                    Bridge Size:	18mm<br>
+                    Temple Length:	140mm</p>
+                  </div>
+                
+                <div class="modal-footer">
+                  <!-- <a class="btn btn-dark" href="nike.docx" type="Download">Download</a> -->
+                  <a class="btn btn-dark" href="nike-buynow.html">ADD TO CART</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  </div>
+                  <div class="col-md-4">
+      
+                    <!-- Button trigger modal -->
+                    <button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="card">
+                        <img src="calvin images\img1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Calvin Klain CK23523 001</h5>
+                          <p class="card-text">Rs.29,100.00 PKR</p>
+                          <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+                          <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+                        </div>
+                      </div>
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="calvin images\img1.webp" alt="" width="100%">
+                          </div>
+                          
+                            <div class="zero">
+                            <h3 class="fw-bold text-primary">CALVIN KLAIN</h3>
+                            <h5 class="">CALVIN KLAIN CK23523 001</h5>
+                            <span class="text-danger">Rs.29,100.00 PKR</span>
+                          </div> <hr>
+                          <div class="zero">
+                            <p class="fw-bold fs-4 text-primary">Details:</p>
+                            <p class="">Model Number:	CK23523 <br>
+                              Frame Colour:	Black and Transparent <br>
+                              Colour Code:	001 <br>
+                              Frame Type:	Full Rim <br>
+                              Frame Shape:	Square <br>
+                              Material:	Acetate <br>
+                              Lens Width:	54mm <br>
+                              Lens Height:	46mm <br>
+                              Bridge Size:	15mm <br>
+                              Temple Length:	140mm</p>
+                            </div>
+                          
+                          <div class="modal-footer">
+                           <a class="btn btn-dark" href="calvin.docx" type="Download">Download</a>
+                            <a class="btn btn-dark" href="buynow.html">ADD TO CART</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                            </div>
+                            <div class="col-md-4">
+                            <!-- Button trigger modal -->
+                    <button type="button" class="bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="card">
+                        <img src="calvin images\img2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Calvin Klain CK22508 431</h5>
+                          <p class="card-text">Rs.25,400.00 PKR</p>
+                          <a class="btn btn-dark" href="ray-ban.docx" type="Download">Download</a>
+                          <a class="btn btn-dark" href="ray-ban-buynow.html">ADD TO CART</a>
+                        </div>
+                      </div>
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <img src="calvin images\img2.webp" alt="" width="100%">
+                          </div>
+                          
+                            <div class="zero">
+                            <h3 class="fw-bold text-primary">CALVIN KLAIN</h3>
+                            <h5 class="">Calvin Klain CK22508 431</h5>
+                            <span class="text-danger">Rs.25,400.00 PKR</span>
+                          </div> <hr>
+                          <div class="zero">
+                            <p class="fw-bold fs-4 text-primary">Details:</p>
+                            <p class="">Model Number:	CK22508 <br>
+                              Frame Colour:	Blue Crystal<br>
+                              Colour Code:	431<br>
+                              Frame Type:	Full Rim<br>
+                              Frame Shape:	Square<br>
+                              Material:	Acetate<br>
+                              Lens Width:	55mm<br>
+                              Lens Height:	40mm<br>
+                              Bridge Size:	16mm<br>
+                              Temple Length:	145mm</p>
+                            </div>
+                          
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">Buy now</button>
+                            <a class="btn btn-dark" href="buynow.html">ADD TO CART</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                            </div>
+                          </div>
+                        </div>
+    <br><br>
+
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="glasses">
+            <a href="lenses.html">
+           <img src="lenses-images/bg-img.jpg" alt="" width="100%" height="600px">
+           <div class="centered">
+            <h2 class="fw-bold">CONTACT LENSES</h2>
+            <p></p>
+           </div>
+          </a>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="glasses">
+            <a href="sunglasses.html">
+           <img src="sunglasses-images/bg-img.avif" alt="" width="100%" height="600px">
+           <div class="centered">
+            <h2 class="fw-bold">SUNGLASSES</h2>
+            <p></p>
+           </div>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <a href="sunglasses.html">
+      <img src="images/lastimg.jpg" alt="" width="100%">
+    </a>
+  </section>
+
+  <!-- footer -->
+
+  <div class="footer section">
+  <div class="container">
+   <div class="row">
+    <div class="col-lg-3 col-sm-6">
+      <div class="single-box">
+        <h2 class="box">EYEONIC</h2>
+        <br><br>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>SD-1, Block A North Nazimabad Town,
+          Karachi, 74700</p>
+          
+          <br>
+          <i class="fa-solid fa-phone"></i>
+          <p>Help line & Whatsapp: 03257662005, 033GLASSES3</p>
+          <br>
+          <i class="fa-regular fa-envelope"></i>
+          <p>support@eyeonic.pk</p>
+      
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="single-box">
+        <h2>COMPANY</h2>
+        <br><br>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="single-box">
+        <h2>QUICK LINKS</h2>
+        <br><br>
+        <ul>
+          <li><a href="sunglasses.html">SunGlasses</a></li>
+          <li><a href="lenses.html">Contact Lenses</a></li>
+          <li><a href="#">Store Locations</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="compare.html">Comparison</a></li>
+          <li><a href="#">How To Order</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="single-box">
+        <h2>LET'S STAY IN TOUCH!</h2>
+        <br><br>
+        <p class="socials">
+          <a href="#"><i class="icon1 fa-brands fa-square-facebook" id="facebook"></i></a>
+          <a href="#"><i class="icon2 fa-brands fa-square-instagram" id="instagram"></i></i></a>
+          <a href="#"><i class="icon3 fa-brands fa-square-pinterest" id="pinterest"></i></i></a>
+          <a href="#"><i class="icon4 fa-brands fa-square-twitter" id="twitter"></i></a>
+          </p>
+        <div class="input-group mb-3">
+          <form action="" style="display: flex;">
+          <input type="email" placeholder="Enter Your Email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+          <input type="submit" value="Sign Up" class="btn-dark" pattern="[a-z]{1,30}(,[a-z]{1,30})*">
+        </form>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="one">&copy; 2024 Eyeonic.pk. All Right Reserved.</p>
+   </div>
+   
+ 
+     
+    
+  
+</div>
+</div>
+  <!-- end of footer -->
+  
+
+
+   <!-- bootstrap js -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+  <script src="js/jquery-3.7.1.js"></script>
+    <!-- jquery-backToTop -->
+  <script src="jquery-backToTop.js"></script>
+  <script>
+    $.backToTop();
+  </script> 
+  <!-- custom js -->
+  <script src="text.js"></script>
+
+</body>
+</html>

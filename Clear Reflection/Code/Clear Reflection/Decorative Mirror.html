@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflection</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <link rel="stylesheet" href="assets/style/contact us page style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="icon" href="assets/images/logo-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  
+     .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        /* scroll button  */
+        #myBtnx {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: black;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+
+        }
+.carousel-inner{
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: 0 auto
+}
+.imgd{
+    width: 1000px;
+    height: 95%;
+    margin: 0 auto
+}
+        /* 
+        #myBtnx:hover {
+            background-color: #555;
+        } */
+        /* scroll button  */
+
+
+        /* hover index box  */
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: rgb(2, 1, 1);
+        }
+
+        .box {
+            position: relative;
+            cursor: pointer;
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            transition: all .7s;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+            flex-direction: column;
+            clip-path: circle(0% at 50% 50%);
+            transition: all .5s;
+            font-weight: bolder;
+
+        }
+
+        .box:hover .content {
+            clip-path: circle(100% at 50% 50%);
+        }
+
+        .box:hover img {
+            filter: blur(8px);
+            transform: scale(1.6);
+        }
+
+        .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        .whyus image {
+            image-rendering: crisp-edges;
+        }
+
+        .looks {
+            animation-name: anime;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+            height: 500px;
+        }
+
+
+
+    h1{
+      text-align: center;
+      font-size: 80px;
+      color: darkblue;
+    
+    }
+    h3{
+      text-align: center;
+    }
+    h4{
+      margin-left: 30px;
+    
+      font-size: 20px;
+      color: green;
+      
+    }
+    .card-footer{
+      background-color: lightblue;
+    }
+    .card-body{
+      background-color: lightcyan;
+    }
+ 
+    body::-webkit-scrollbar{
+            background-color: transparent;
+        }
+        body::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(107, 107, 107),yellowgreen,rgb(1, 0, 82));
+            border-radius: 20px;
+            height: 25%;
+        }
+    #more,#more1,#more2,#more4,#more5,#more6 {display: none;}
+
+    .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.quantity-btn {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+    
+    
+    </style>
+
+
+  <body style="background-color: rgb(173, 169, 170);"> 
+    <!-- Navbar Start -->
+    <marquee directtion="right" style="background-color:rgb(173, 169, 170);">info@mirrorshop.com &nbsp; info@mirrorshop.com  &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com&nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com
+     &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com </marquee>
+    <nav nav class="navbar sticky-top shadow navbar-expand-md navbar-light" style="background-color: rgb(88, 88, 88);">
+     
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+     aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+ </button>
+     <div class="collapse navbar-collapse" id="myNavbarToggler7">
+
+         <ul class="navbar-nav mx-auto align-items-center">
+             <li class="nav-item">
+                 <a class=" Under-line  nav-link active" href="index.html" target="blank">Home</a>
+             </li>
+             <li class="nav-item dropdown" id="myDropdown">
+               <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Categories
+               </a>
+               <ul class="dropdown-menu">
+                   <li> <a class="dropdown-item" href="wooden framed miirror.html"> Wooden Framed Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="acrylic mirror.html"> Acrylic Bordered Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="Metal Bordered.html"> Metal Bordered Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="Decorative Mirror.html"> Decorative Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="led mirror.html"> LED Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="bluetooth mirror.html"> Bluetooth Mirrors </a></li>
+               </ul>
+           </li>
+             <li class="nav-item dropdown" id="myDropdown">
+               <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mirrors
+               </a>
+               <ul class="dropdown-menu">
+                   <li> <a class="dropdown-item" href="Drawing room.html">  Drawing/living room mirrors</a></li>
+                   <li> <a class="dropdown-item" href="bathroom mirror.html">  Bathroom mirrors</a></li>
+                   <li> <a class="dropdown-item" href="Dressing room.html">  Dressing mirrors</a></li>
+                   <li> <a class="dropdown-item" href="bedroom.html">  Bedroom mirrors</a></li>
+               </ul> 
+           </li>
+             <a class="d-none d-lg-block" href="index.html" target="blank">
+                 <img src="assets/images/footer logo.PNG" width="150px" alt="">
+             </a>
+       
+           <li class="nav-item dropdown" id="myDropdown">
+             <a class="nav-link dropdown-toggle" href="eporiums.html" data-bs-toggle="dropdown"> Emporiums
+             </a>
+             <ul class="dropdown-menu">
+                 <li> <a class="dropdown-item" href="eporiums.html"> Karachi </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Lahore </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Islamabad </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Peshawar </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Rawalpindi </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Multan </a></li>
+             </ul>
+         </li>
+             <li class="nav-item">
+                 <a class=" Under-line nav-link active" href="about us.html" target="blank">About us</a>
+             </li>
+             <li class="nav-item">
+               <a class=" Under-line nav-link active" href="contact us.html" target="blank">Contact us</a>
+           </li>
+         </ul>
+ </nav>
+ <!-- Navbar End -->
+
+
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/carousel decorative1.jpg" class="d-block w-100" alt="..." style="height: 450px;" >
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel decorative2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/carousel decorative3.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1><b><u>Decorative Mirrors</u></b></h1>
+    <br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+        <img src="assets/images/decorative1.webp" class="card-img-top" style="height: 33%;" alt="..." >
+        <div class="card-body">
+          <h3 class="card-title">Luxury Designer Mirror </h3>
+          
+          <p class="card-text">Our Venetian Mirrors are true works of art, handcrafted by skilled <span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+          <b onclick="readmore()" id="myBtn" style="cursor: pointer;">Read more</b>
+        </div>
+        <h4>$220</h4>
+        
+        <div class="card-footer">
+          <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+          <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+          <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+            <i class="fa fa-download" style="font-size: small;"></i>
+        </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container">
+               <div class="row">
+              <div class="col-12">
+                  <div class="card" style="width: 100%;">
+                      <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+                    </div>
+              </div>
+              <div class="col-12">
+                  <div class="product">
+                      <h2>Product Name</h2>
+                      <p>Description of the product.</p>
+                      <p>Price: $19.99</p>
+                      <div class="quantity-container">
+                          <button class="quantity-btn decrease">-</button>
+                          <span class="quantity">1</span>
+                          <button class="quantity-btn increase">+</button>
+                      </div>
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+            </div>
+          </div>
+          </div>  
+                          
+                      </div>
+                    </div>
+          
+        
+ 
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+        </div>
+           </div>
+
+<div class="col-md-4">
+  <img src="assets/images/decorative2 .webp" class="card-img-top" style="height: 33%;" alt="..." >
+  <div class="card-body">
+    <h3 class="card-title">Art Decorative Mirrors</h3>
+    
+         <p class="card-text">The multi facet dramatic frame design of this wall mirror is a perfect stylish  <span id="dots1">...</span><span id="more1">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+         <b onclick="readmore1()" id="myBtn1" style="cursor: pointer;">Read more</b>
+  </div>
+  <h4>$220</h4>
+  
+  <div class="card-footer">
+    <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+    <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+      <i class="fa fa-download" style="font-size: small;"></i>
+  </a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+         <div class="container">
+         <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 100%;">
+                <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+              </div>
+        </div>
+        <div class="col-12">
+            <div class="product">
+                <h2>Product Name</h2>
+                <p>Description of the product.</p>
+                <p>Price: $19.99</p>
+                <div class="quantity-container">
+                    <button class="quantity-btn decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+      </div>
+    </div>
+    </div>  
+                    
+                </div>
+              </div>
+    
+    
+  
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+  </div>
+     </div>
+
+     <div class="col-md-4">
+      <img src="assets/images/decorative3.webp" class="card-img-top" style="height: 33%;" alt="..." >
+      <div class="card-body">
+        <h3 class="card-title">Pregaspor Mirror </h3>
+        
+             <p class="card-text"> Pregaspor frameless bathroom mirror uses a unique Mirror On Mirror design <span id="dots2">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+             <b onclick="readmore2()" id="myBtn2" style="cursor: pointer;">Read more</b>
+      </div>
+      <h4>$220</h4>
+      
+      <div class="card-footer">
+        <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+        <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+        <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+          <i class="fa fa-download" style="font-size: small;"></i>
+      </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+             <div class="container">
+             <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+                  </div>
+            </div>
+            <div class="col-12">
+                <div class="product">
+                    <h2>Product Name</h2>
+                    <p>Description of the product.</p>
+                    <p>Price: $19.99</p>
+                    <div class="quantity-container">
+                        <button class="quantity-btn decrease">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+          </div>
+        </div>
+        </div>  
+                        
+                    </div>
+                  </div>
+        
+      
+    
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+      </div>
+         </div>
+  
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+        <img src="assets/images/decorative4.webp" class="card-img-top" style="height: 33%;" alt="..." >
+        <div class="card-body">
+          <h3 class="card-title">Circle Decor Mirrors</h3>
+          
+          <p class="card-text">Circle Decor Mirrors set is a stunning collection of mirrors ,  <span id="dots4">...</span><span id="more4">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+          <b onclick="readmore4()" id="myBtn4" style="cursor: pointer;">Read more</b>
+        </div>
+        <h4>$220</h4>
+        
+        <div class="card-footer">
+          <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+          <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+          <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+            <i class="fa fa-download" style="font-size: small;"></i>
+        </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <div class="container">
+               <div class="row">
+              <div class="col-12">
+                  <div class="card" style="width: 100%;">
+                      <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+                    </div>
+              </div>
+              <div class="col-12">
+                  <div class="product">
+                      <h2>Product Name</h2>
+                      <p>Description of the product.</p>
+                      <p>Price: $19.99</p>
+                      <div class="quantity-container">
+                          <button class="quantity-btn decrease">-</button>
+                          <span class="quantity">1</span>
+                          <button class="quantity-btn increase">+</button>
+                      </div>
+                      <button class="add-to-cart">Add to Cart</button>
+                  </div>
+            </div>
+          </div>
+          </div>  
+                          
+                      </div>
+                    </div>
+          
+          
+        
+ 
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+        </div>
+           </div>
+
+<div class="col-md-4">
+  <img src="assets/images/decorative5.webp" class="card-img-top" style="height: 33%;" alt="..." >
+  <div class="card-body">
+    <h3 class="card-title">Golden Round Mirror</h3>
+    
+         <p class="card-text">Ever wanted a wall décor made of strong metal that exhibits a great art<span id="dots5">...</span><span id="more5">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+         <b onclick="readmore5()" id="myBtn5" style="cursor: pointer;">Read more</b>
+  </div>
+  <h4>$220</h4>
+  
+  <div class="card-footer">
+    <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+    <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+      <i class="fa fa-download" style="font-size: small;"></i>
+  </a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+         <div class="container">
+         <div class="row">
+        <div class="col-12">
+            <div class="card" style="width: 100%;">
+                <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+              </div>
+        </div>
+        <div class="col-12">
+            <div class="product">
+                <h2>Product Name</h2>
+                <p>Description of the product.</p>
+                <p>Price: $19.99</p>
+                <div class="quantity-container">
+                    <button class="quantity-btn decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn increase">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+      </div>
+    </div>
+    </div>  
+                    
+                </div>
+              </div>
+    
+    
+  
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+  </div>
+     </div>
+
+     <div class="col-md-4">
+      <img src="assets/images/decorative6.webp" class="card-img-top" style="height: 33%;" alt="..." >
+      <div class="card-body">
+        <h3 class="card-title">Aesthetic Mirror</h3>
+        
+             <p class="card-text">Living Room Aesthetic Mirror Wall Hanging Luxury Design Decorative<span id="dots6">...</span><span id="more6">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis.</span></p>
+             <b onclick="readmore6()" id="myBtn6" style="cursor: pointer;">Read more</b>
+      </div>
+      <h4>$220</h4>
+      
+      <div class="card-footer">
+        <!-- <button type="button" class="btn btn-outline-success" style="font-size: small;">Add to cart</button> -->
+        <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Add to cart</button>
+        <a href="assets/cart work2 download.docx" download='image' class="btn btn-outline-danger">Download
+          <i class="fa fa-download" style="font-size: small;"></i>
+      </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">CLEAR REFLECTION</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+             <div class="container">
+             <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <img src="assets/images/footer logo.PNG" class="card-img-top" alt="...">
+                  </div>
+            </div>
+            <div class="col-12">
+                <div class="product">
+                    <h2>Product Name</h2>
+                    <p>Description of the product.</p>
+                    <p>Price: $19.99</p>
+                    <div class="quantity-container">
+                        <button class="quantity-btn decrease">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn increase">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+          </div>
+        </div>
+        </div>  
+                        
+                    </div>
+                  </div>
+        
+      
+    
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up" style="font-size: xx-large; padding-left: 30px; cursor: pointer;"></i>  
+      </div>
+         </div>
+  
+
+  </div>
+</div>
+
+
+
+  <!--Footer start-->
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="bg-light text-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+
+                    <p>
+                        <img src="assets/images/footer logo.PNG" alt="">
+                    </p>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="font: size 20px; margin-top: 20px;">
+                    <h3 class="text-uppercase">Products</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+                        <li>
+                            <a href="bedroom.html" class="text-dark" style="text-decoration: none;">Bedroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="led mirror.html" class="text-dark" style="text-decoration: none;">Led
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bluetooth mirror.html" class="text-dark" style="text-decoration: none;">Bluetooth Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bathroom mirror.html" class="text-dark" style="text-decoration: none;"> bathroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="eporiums.html" class="text-dark" style="text-decoration: none;">Emporiums</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style=" margin-top: 20px;">
+                    <h3 class="text-uppercase">Information</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+
+                        <li>
+                            <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html" class="text-dark" style="text-decoration: none;">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact us.html" class="text-dark" style="text-decoration: none;">Contact
+                                Us</a>
+                        </li>
+                      
+
+                    </ul>
+                </div>
+                <h3 class="text-uppercase">OUR LOCATION</h3>
+
+                <ul class="list-unstyled mb-0">
+  <li>
+    <h5>  <a>A-240 Block D North Nazimabad Town, Karachi, Karachi City, Sindh 74700 </a></h5>
+  </li>
+
+
+</ul>
+</div>
+
+
+<div class=" col-sm-12" style="text-align: center; padding: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12" style="width: 10%;  display: flex;">
+                            <img src="assets/images/facebook (3).png" alt="">
+                            <img src="assets/images/youtube.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/whatsapp.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/instagram.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/twitter.png" alt="" style="padding-left: 20px;">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-center p-3" style="text-decoration: none;" >
+        © 2024 
+       Copyright © 2024 Clear Reflection & Mirrors Limited | All Rights Reserved
+      </div>
+
+    </footer>
+ 
+  </section>
+   <!--Footer end-->
+   <script src="https://ai.mobirise.com/assets/startm5/smoothscroll/smooth-scroll.js?v=lq0b9jj6"></script>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script>
+       $(document).ready(function () {
+           let quantity = 1;
+
+           $('.increase').on('click', function () {
+               quantity++;
+               updateQuantity();
+           });
+
+           $('.decrease').on('click', function () {
+               if (quantity > 1) {
+                   quantity--;
+                   updateQuantity();
+               }
+           });
+
+           $('.add-to-cart').on('click', function () {
+               alert(`Added ${quantity} product(s) to cart!`);
+           });
+
+           function updateQuantity() {
+               $('.quantity').text(quantity);
+           }
+       });
+   </script>
+    <button onclick=" topFunction()" id="myBtnx" title="Go to top">
+                <div class="imgy" style="width:20px ; height: 20px;"><img src="assets/images/arrow.png" alt=""
+                        width="30px" style="margin-left:-5px;"></div>
+                </button>
+
+
+
+                <script>
+                    //Get the button
+                    var mybutton = document.getElementById("myBtnx");
+
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () { scrollFunction() };
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+
+                    function myFunction(x) {  
+                         x.classList.toggle("fa-thumbs-down");  
+                         }  
+
+
+                         function readmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+
+function readmore1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function readmore2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+function readmore4(){
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+
+function readmore5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+function readmore6() {
+  var dots = document.getElementById("dots6");
+  var moreText = document.getElementById("more6");
+  var btnText = document.getElementById("myBtn6");
+
+
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+                </script>
+</body>
+</html>

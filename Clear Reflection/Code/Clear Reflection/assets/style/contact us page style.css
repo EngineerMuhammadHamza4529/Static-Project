@@ -1,0 +1,109 @@
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: gray; */
+  /* line-height: 1.9; */
+  color: #8c8c8c;
+  position: relative;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+ 
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.content {
+  padding: 7rem 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+
+/* .btn,
+.box-control,
+.custom-select {
+  height: 45px;
+} */
+
+
+
+/* .btn {
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+} */
+
+/* .btn.btn-primary {
+  background: #35477d;
+  color: #fff;
+  padding: 15px 20px;
+} */
+
+
+
+/* .contact-wrap {
+  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+} */
+
+.contact-wrap .box,
+.contact-wrap .contact-info {
+  padding: 40px;
+}
+
+.contact-wrap .contact-info {
+  color: black;
+}
+
+.contact-wrap .contact-info ul li {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.contact-wrap .contact-info h3 {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+body::-webkit-scrollbar{
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgb(236, 143, 158),yellowgreen,rgb(143, 141, 228));
+  border-radius: 20px;
+  height: 25%;
+}

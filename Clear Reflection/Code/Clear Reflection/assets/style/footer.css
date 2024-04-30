@@ -1,0 +1,63 @@
+*Footer styling start*/
+
+.contact{
+  font-family: "Times New Roman", Times, serif;
+}
+.linkc a {
+  color: rgb(131, 68, 68);
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.5s ease;
+  font-size: large;
+}
+
+.linkc a:hover{
+  color:#000;
+    text-decoration: none;
+}
+
+.social-media ul{
+  display: inline-block;
+}
+
+.social-media ul li{
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.social-media ul li a{
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.1em;
+  background: transparent;
+     -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+
+}
+
+.social-media ul li a:hover{
+
+  color: #000;
+}
+
+input[type=text]{
+  height: 37px;
+  border-radius: 3px;
+  /* width: 70%; */
+  float: left;
+}
+input[type=text]::placeholder{
+  color: #999;
+}
+button{
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+/*Footer styling end*/
+

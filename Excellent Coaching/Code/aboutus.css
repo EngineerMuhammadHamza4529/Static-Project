@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+  }
+  #scrolltop {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    border-radius: 50%;
+  }
+  
+  
+  
+  h1 {
+    background-color: #ffffff;
+    color: #000000;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+  }
+  .fontS{
+    font-weight: bold;
+    font-size: 35px;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav .nav-link {
+   font-family: nexa;
+   border: 2px solid rgb(20, 190, 190);
+  
+   font-size: 1.3rem;
+  }
+  
+  nav ul li a:hover{
+  background-color: rgb(20, 190, 190) ;
+  border-color: white;
+  transition: all 1s;
+   
+  }
+  #container{
+    margin: 30px;
+  }
+  
+  .banner{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+  }
+  
+  
+  #banner h2{
+    text-align: center;
+    margin: 20px;
+  }
+  section .h1 {
+    font-weight: bold;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+  }
+  
+  .card{
+    transition: all 0.3s;
+  }
+  .card:hover{
+    transform: scale(1.15);
+  }
+  .card-title {
+    color: red;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container p {
+    color: rgba(0, 0, 0, 0.486);
+  }
+  .container-team{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background: rgb(26, 188, 156);
+    background: -moz-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+    background: linear-gradient(135deg, rgba(26, 188, 156, 1) 0%, rgba(142, 68, 173, 1) 100%);
+  }
+  
+  .container-team h1 {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    font-weight: lighter;
+    color: #000000;
+  }
+  
+  .container-team p {
+    font-size: 12px;
+    font-weight: light;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .container-team span a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+  }
+  
+  .container-team , .avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    img { width: 100%; height: auto; }
+  }
+  .footer {  background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 100px 0;
+  }
+  
+  .box {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+  }
+  
+  .single-box p {
+    color: #ffffff;
+    line-height: 1.9;
+  }
+  
+  .single-box h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .single-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: 100;
+  }
+  
+  .single-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  #basic-addon2 {
+    background-color: #fe1e4f;
+    color: #fff;
+  }
+  
+  .socials i {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .icon1:hover {
+    color: blue;
+    background-color: white;
+  }
+  
+  .icon2:hover {
+    color: rgb(192, 66, 8);
+    background-color: white;
+  }
+  
+  .icon3:hover {
+    color: rgb(216, 38, 11);
+    background-color: white;
+  }
+  
+  .icon4:hover {
+    color: rgb(58, 114, 211);
+    background-color: white;
+  }
+  
+  .btn-dark:hover {
+    background-color: rgb(5, 167, 167);
+  }
+  
+  .one {
+    text-align: right;
+  }
+  
+  /* media queries */
+  @media(min-width:992px) {
+    .nav-item {
+      border-bottom: none;
+    }
+  }

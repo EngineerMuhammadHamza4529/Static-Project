@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fashion Product</title>
+</head>
+<body>
+    <!-- <header>FIRST FASHION IS  LIVE</header> -->
+       <nav class="navbar navbar-expand-xl navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#"><span class="logo">First</span>Fashion</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item1">
+                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                 </li>
+                 <li class="nav-item2 dropdown">
+                   <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Category
+                   </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="adidas.html">ADIDAS</a></li>
+                     <li><a class="dropdown-item" href="nike.html">NIKE</a></li>
+                     <li><a class="dropdown-item" href="levis.html">LEVI'S</a></li>
+                   </ul>
+                 </li>
+                 <li class="nav-item3">
+                   <a class="nav-link active" href="product.html">Fashion Products</a>
+                 </li>
+                 <li class="nav-item4">
+                   <a class="nav-link active" href="comparison.html">Product Comparison</a>
+                 </li>
+                 <li class="nav-item5">
+                   <a class="nav-link active" href="contact.html">Contact Us</a>
+                 </li> 
+             </div>
+     <icon class="fa fa-search"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></icon>
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+ <div class="offcanvas-header">
+   <h5 id="offcanvasTopLabel"></h5>
+ </div>
+ <div class="offcanvas-body">
+   <input type="search" placeholder="Search">
+   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ </div>
+</div>
+           </div>
+         </nav>
+
+   <!--welcome section-->
+   <section id="home">
+    <h1><span style="color: rgb(18, 123, 228); font-size: 50px;">Fashion</span> Products</h1>
+    <p>Discover the latest fashion trends and products.</p>
+   </section>
+
+   <!--card starts-->
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/img11.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <div class="card-body">
+            <h6>ZEBRA BLOCK SWEATSHIRT</h6>
+            <p class="card-text">Rs.1,499.00 PKR</p>
+           
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel1">FIRST FASHION</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                         <div class="row">
+                          <div class="col-md-6">
+                            <img src="images/img11.webp" width="100%" height="100%" alt=""> 
+                          </div>
+                          <div class="col-md-6">
+                            <h5>DETAILS</h5>
+                            <ul>
+                              <li>Article No:FWTS23-015</li>
+                              <li>Men,s Sweatshirt</li>
+                              <li>Regular Fit</li>
+                              <li>High Quality</li>
+                            </ul>
+                            <br>
+                            <p><i class="fa-solid fa-location-dot"></i> Shop no L317-5c,sector 12 A North Karachi Near Royal Foodies, Pakistan Karachi City...</p>
+                            <br>
+                            <a href="cart1.html" class="btn btn-success">Buy now</a>
+                          </div>
+                         </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgH.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <div class="card-body">
+            <h6>SLEEVELESS HOODIE</h6>
+            <p class="card-text">Rs.1,299.00 PKR</p>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgH.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS23-008</li>
+                            <li>Men,s Sleeveless Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no L317-5c,sector 12 A North Karachi Near Royal Foodies, Pakistan Karachi City...</p>
+                          <br>
+                          <a  href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/img12.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          <div class="card-body">
+            <h6> MWB HOODIE</h6>
+            <p class="card-text">Rs.1,699.00 PKR</p>
+
+             <!-- Modal -->
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel3">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/img12.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS22-021</li>
+                            <li>Men,s MBW Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no L317-5c,sector 12 A North Karachi Near Royal Foodies, Pakistan Karachi City...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgG.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          <div class="card-body">
+            <h6>CREW NECK SWEATSHIRT</h6>
+            <p class="card-text">Rs.1,799.00 PKR</p>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgG.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS21-111</li>
+                            <li>Men,s Crew Neck Sweatshirt</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no L317-5c,sector 12 A North Karachi Near Royal Foodies, Pakistan Karachi City...</p>
+                          <br>
+                          <a href="cart2.html" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgI.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          <div class="card-body">
+            <h6>COLLEGIATE JACKET</h6>
+            <p class="card-text">Rs.3,499.00 PKR</p>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel5">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgI.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTA26-031</li>
+                            <li>Men,s Collegiate Jacket</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no B36 2nd Floor Saima Paari Mall North Nazimabad Karachi , Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgM.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal6">
+          <div class="card-body">
+            <h6>BLACK PULLOVER HOODIE</h6>
+            <p class="card-text">Rs.3,799.00 PKR</p>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel6">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgM.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FDTS42-011</li>
+                            <li>Women,s Black Pullover Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no B36 2nd Floor Saima Paari Mall North Nazimabad Karachi , Pakistan...</p>
+                          <br>
+                          <a href="cart3.html" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgJ.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          <div class="card-body">
+            <h6>FIT WOVEN JACKET</h6>
+            <p class="card-text">Rs.2,599.00 PKR</p>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel7">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgJ.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS22-021</li>
+                            <li>Men,s Fit Woven Jacket</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no B36 2nd Floor Saima Paari Mall North Nazimabad Karachi , Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgk.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal8">
+          <div class="card-body">
+            <h6>GRAPHIC PRINT HOODIE</h6>
+            <p class="card-text">Rs.3,899.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel8">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgk.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:LWTS20-152</li>
+                            <li>Men,s Graphic Print Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no B36 2nd Floor Saima Paari Mall North Nazimabad Karachi , Pakistan...</p>
+                          <br>
+                          <a href="cart4.html" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/img18.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal9">
+          <div class="card-body">
+            <h6>UNISEX ROYAL HOODIE SET</h6>
+            <p class="card-text">Rs.2,499.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel9">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/img18.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS17-032</li>
+                            <li>Women,s Unisex Royal Hoodie SET</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgB.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal10">
+          <div class="card-body">
+            <h6>UNISEX WHITE HINECK</h6>
+            <p class="card-text">Rs.1,499.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel10" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel10">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgB.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FMTE24-213</li>
+                            <li>Men,s Unisex White Hineck</li>
+                            <li>Slim Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgC.webp" class="card-img-top" height="404px" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal11">
+          <div class="card-body">
+            <h6>GREY BODYCON DRESS</h6>
+            <p class="card-text">Rs.1,899.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel11" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel11">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgC.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS28-016</li>
+                            <li>Women,s Bodycon Dress</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgE.webp" class="card-img-top" height="404px" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal12">
+          <div class="card-body">
+            <h6>YELLOW CO ORD SET</h6>
+            <p class="card-text">Rs.1,999.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel12">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgE.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWTS15-027</li>
+                            <li>Women,s CO ORD SET</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgA.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal13">
+          <div class="card-body">
+            <h6>LONG LENGHT HOODIE</h6>
+            <p class="card-text">RS.2,499.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel13" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel13">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgA.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FDTS24-011</li>
+                            <li>Women,s Long Lenght Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgN.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal14">
+          <div class="card-body">
+            <h6>PRINT PULLOVER HOODIE</h6>
+            <p class="card-text">Rs.4,599.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel14" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel14">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgN.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FDTS12-034</li>
+                            <li>Women,s Pullover Hoodie</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="cart5.html" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgF.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal15">
+          <div class="card-body">
+            <h6>GREEN FLEECE HOODIE</h6>
+            <p class="card-text">Rs.1,799.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel15" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel15">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgF.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:FWAS23-421</li>
+                            <li>Men,s Fleece Hoodie</li>
+                            <li>Slim Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no R114 1sT Floor Lucky One Mall Main Rashid Minhas Road Karachi,Pakistan...</p>
+                          <br>
+                          <a href="" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="card" style="width: 17rem;" id="show">
+          <img src="images/imgD.webp" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal16">
+          <div class="card-body">
+            <h6>CREW NECK SWEATSHIRT</h6>
+            <p class="card-text">Rs.1,799.00 PKR</p>
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel16" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel16">FIRST FASHION</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                       <div class="row">
+                        <div class="col-md-6">
+                          <img src="images/imgD.webp" width="100%" height="100%" alt=""> 
+                        </div>
+                        <div class="col-md-6">
+                          <h5>DETAILS</h5>
+                          <ul>
+                            <li>Article No:DWTS32-321</li>
+                            <li>Men,s Crew Neck Sweatshirt</li>
+                            <li>Regular Fit</li>
+                            <li>High Quality</li>
+                          </ul>
+                          <br>
+                          <p><i class="fa-solid fa-location-dot"></i> Shop no L317-5c,sector 12 A North Karachi Near Royal Foodies, Pakistan Karachi City...</p>
+                          <br>
+                          <a href="cart6.html" class="btn btn-success">Buy now</a>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="document.docx" type="button" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- End card block -->
+    <br>
+
+    <!--Footer section-->
+  <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #0a1125"
+      >
+<section
+         class="d-flex justify-content-between p-4"
+         style="background-color: black"
+         >
+  <div class="me-5">
+    <span>Get connected with us on social networks:</span>
+    
+  </div>
+  <div>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-google"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="" class="text-white me-4">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+</section>
+<section>
+  <div class="text-center text-md-start mt-5">
+    
+    <div class="row mt-3">
+      
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    
+        <h6 class="text-uppercase fw-bold">Fashion Emporium</h6>
+        <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 120px; background-color: aquamarine; height: 3px"
+            />
+        <p>
+          Launched in DECEMBER 2023, FIRST FASHION is a high-street brand
+           dedicated to creating beautiful ready to wear garments for everyone.
+            Our clothes embody the grace and sophistication of high profile fashion.
+             We channel a unique color palette, a wide array of designs and quality
+              fabric that contribute to your personal sense of style.
+        </p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">links</h6>
+        <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 50px; background-color: aquamarine; height: 3px"
+            />
+        <p>
+        <a href="index.html" class="text-white">Home</a>
+        </p>    
+        <p>
+          <a href="product.html" class="text-white">Fashion Products</a>
+        </p>
+        <p>
+          <a href="comparison.html" class="text-white">Product Comparison</a>
+        </p>
+        <p>
+          <a href="contact.html" class="text-white">Contact Us</a>
+        </p>
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase fw-bold">Category</h6>
+        <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 80px; background-color: aquamarine; height: 3px"
+            />
+        <p>
+          <a href="adidas.html" class="text-white">ADIDAS</a>
+        </p>
+        <p>
+          <a href="nike.html" class="text-white">NIKE</a>
+        </p>
+        <p>
+          <a href="levis.html" class="text-white">LEVI'S</a>
+        </p>
+       
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase fw-bold">OUR Contact</h6>
+        <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 100px; background-color: aquamarine; height: 3px"
+            />
+        <p><i class="fas fa-home mr-3"></i> Karachi, Lucky One Mall 10012, Pak</p>
+        <p><i class="fas fa-envelope mr-3"></i> Firstfashion@gmail.com</p>
+        <p><i class="fas fa-phone mr-3"></i> + 92300000000</p>
+        <p><i class="fas fa-print mr-3"></i> + 92300000000</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div
+     class="text-center p-3"
+     style="background-color: rgba(0, 0, 0, 0.2)"
+     >
+  © 2024,Powered by /
+  <a class="text-white" href="index.html"><span style="color: aquamarine; font-size: larger;">First</span> Fashion</a>
+</div>
+</footer>
+</body>
+</html>

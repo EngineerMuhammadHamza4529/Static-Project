@@ -1,0 +1,321 @@
+/**
+jquery-backToTop effects
+
+@license MIT
+@author Pablo Pizarro @ppizarror.com
+ */
+
+/**
+-------------------------------------------------------------------------------
+None effect
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-effect-none-on {
+}
+
+.jquery-back-to-top-effect-none-off {
+}
+
+/**
+-------------------------------------------------------------------------------
+Fade effect
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-effect-fade-on {
+    -moz-animation: jquery-back-to-top-fadein .4s ease-in;
+    -webkit-animation: jquery-back-to-top-fadein .4s ease-in;
+    animation: jquery-back-to-top-fadein .4s ease-in;
+}
+
+.jquery-back-to-top-effect-fade-off {
+    -moz-animation: jquery-back-to-top-fadeout .4s ease-in;
+    -webkit-animation: jquery-back-to-top-fadeout .4s ease-in;
+    animation: jquery-back-to-top-fadeout .4s ease-in;
+}
+
+/**
+-------------------------------------------------------------------------------
+Spin+Fade effect
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-effect-spin-on {
+    -moz-animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+    -webkit-animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+    animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+}
+
+.jquery-back-to-top-effect-spin-off {
+    -moz-animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+    -webkit-animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+    animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+}
+
+/**
+Spin effect - on
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-spin-180p {
+    from {
+        -moz-transform: rotate(180deg);
+    }
+    to {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-spin-180p {
+    from {
+        -webkit-transform: rotate(180deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-spin-180p {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/**
+Spin effect - off
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-spin-180n {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-spin-180n {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-spin-180n {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+/**
+-------------------------------------------------------------------------------
+Spin+Fade inverse effect
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-effect-spin-inverse-on {
+    -moz-animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+    -webkit-animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+    animation: jquery-back-to-top-fadein .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180p .7s cubic-bezier(0.59, 0.14, 0.33, 0.92);
+}
+
+.jquery-back-to-top-effect-spin-inverse-off {
+    -moz-animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+    -webkit-animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+    animation: jquery-back-to-top-fadeout .4s ease-in, jquery-back-to-top-effect-kf-spin-inverse-180n .5s cubic-bezier(0.6, 0.27, 0.19, 0.83);
+}
+
+/**
+Spin inverse effect - on
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-spin-inverse-180p {
+    from {
+        -moz-transform: rotate(180deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-spin-inverse-180p {
+    from {
+        -webkit-transform: rotate(180deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-spin-inverse-180p {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/**
+Spin inverse effect - off
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-spin-inverse-180n {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(-180deg);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-spin-inverse-180n {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-180deg);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-spin-inverse-180n {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+/**
+-------------------------------------------------------------------------------
+Zoom effect
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-effect-zoom-on {
+    -moz-animation: jquery-back-to-top-effect-kf-zoom-in .5s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-animation: jquery-back-to-top-effect-kf-zoom-in .5s cubic-bezier(0.4, 0, 1, 1);
+    animation: jquery-back-to-top-effect-kf-zoom-in .5s cubic-bezier(0.4, 0, 1, 1);
+    transform: scale(1.0);
+}
+
+.jquery-back-to-top-effect-zoom-off {
+    -moz-animation: jquery-back-to-top-fadeout 1s ease-in, jquery-back-to-top-effect-kf-zoom-out .4s cubic-bezier(0.79, 0.22, 0.36, 0.6);
+    -webkit-animation: jquery-back-to-top-fadeout 1s ease-in, jquery-back-to-top-effect-kf-zoom-out .4s cubic-bezier(0.79, 0.22, 0.36, 0.6);
+    animation: jquery-back-to-top-fadeout 1s ease-in, jquery-back-to-top-effect-kf-zoom-out .4s cubic-bezier(0.79, 0.22, 0.36, 0.6);
+    transform: scale(0.0);
+}
+
+/**
+Zoom - on
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-zoom-in {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.075);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-zoom-in {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.075);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-zoom-in {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.075);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+/**
+Zoom - off
+ */
+@-moz-keyframes jquery-back-to-top-effect-kf-zoom-out {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.075);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-effect-kf-zoom-out {
+    0% {
+        transform: scale(0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    75% {
+        transform: scale(1.075);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
+
+@keyframes jquery-back-to-top-effect-kf-zoom-out {
+    0% {
+        transform: scale(1.00);
+    }
+    25% {
+        transform: scale(0.90);
+    }
+    50% {
+        transform: scale(0.50);
+    }
+    75% {
+        transform: scale(0.15);
+    }
+    100% {
+        transform: scale(0.00);
+    }
+}

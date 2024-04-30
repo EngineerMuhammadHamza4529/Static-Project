@@ -1,0 +1,272 @@
+
+/* Add your custom styles here */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  background-color: #F7F7F7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+header img{
+ /* padding-bottom: -10px; */
+  width: 80px;
+  height: 80px;
+ 
+}
+
+header h1{
+  margin-top: 10px;
+  color: aqua;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 150%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.dropdown-menu{
+background-color:aqua;
+color: aqua;
+}
+
+.dropdown-menu li a{
+  background-color: pink;
+  border-radius: 20px;
+  color: rgb(0, 68, 255);
+  width: 140px;
+}
+
+.nav-item .dropdown{
+background-color: #333;
+}
+.nav-item a:hover{
+color: red;
+background-color: transparent;
+}
+
+.text-right{
+position: absolute;
+}
+
+.text-right span{
+  color: aqua;
+  
+  }
+
+
+  
+.text-right h3{
+  color: rgb(173, 173, 173);
+  text-align: center;
+  margin-left: 10px;
+  
+  }
+
+.text-right h2{
+  /* background: url("assets/space.jpg")no-repeat; */
+  margin-top: 50vh;
+  text-align: center;
+  color: rgb(173, 173, 173);
+  /* position: absolute; */
+}
+
+.text-right p{
+  /* position: absolute; */
+  /* margin-top: 50vh;
+  text-align: center; */
+  color:rgb(173, 173, 173);
+}
+
+.div img{
+justify-content:left;
+margin-top: 5%;
+width: 50%;
+height: 60vh;
+display: flex;
+position: absolute;
+transform: rotate(30deg);
+animation:moveInSpace 12s ease-in-out infinite alternate;
+}
+@keyframes moveInSpace {
+  50%{
+transform: translateY(100px) rotate(-30deg)scale(0.8);
+
+}
+
+}
+
+.bbimg img{
+width: 100%;
+height: 100vh;
+}
+
+
+.planets img{
+  width: 100%;
+  height: 40vh;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.planets:hover .child{
+transform:scale(1.2) ;
+}
+
+.planet img{
+  width: 100%;
+  height: 60vh;
+  margin-top: 10px;
+}
+
+.planet p{
+  margin-top: 30px;
+}
+
+.plane img{
+ width: 100%;
+ height: 50vh;
+ margin-top: 20px;
+ margin-right: 10px;
+   
+ }
+
+.plane ul{
+ border:1px solid black;
+  
+}
+.plane span{
+color: blue;
+}
+.plan img{
+  width: 100%;
+  height: 70vh;
+  margin-top: 20px;
+}
+.plan p{
+ 
+  margin-top: 20px;
+}
+
+.plan span{
+color: blue;
+font-size: 20px;
+}
+.plan h6{
+  color: rgb(145, 145, 145);
+  margin-top: 20px;
+  border:1px solid ;
+  
+  }
+
+.plam img{
+  width: 100%;
+  height: 50vh;
+  margin-top: 20px;
+}
+.plam p{
+  margin-top: 20px;
+}
+.freelancer {
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
+
+.freelancer h1 {
+  margin-bottom: 5px;
+  font-weight: 100;
+ 
+}
+
+.btn {
+
+  background-color:white;
+  border-color: aqua;
+  color:black;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 1px 10px;
+  border-radius: 10px;
+
+}
+.btn:hover{
+  color: blue;
+  border-color: blue;
+  background-color: transparent;
+}
+
+/* footer */
+.footer {
+  color: #e0e0e0;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.footer img{
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+ 
+}
+.foot img{
+margin-top: 15px;
+margin-left: 20px;
+  width: 30px;
+  height: 40px;
+}
+
+.foot{
+display: flex;
+}
+.ft{
+  color: rgb(185, 185, 185);
+  margin-top: 55px;
+  margin-left: 20%;
+ 
+}
+
+.ft a{
+  text-decoration: none;
+  color: rgb(185, 185, 185);
+  font-size: 20px;
+}
+.ft h1{
+  font-size: 25px;
+  padding-top: 5px;
+  color: white;
+}
+.ft h2{
+  font-size: 20px;
+}
+
+.fit h1{
+font-size: 25px;
+margin-top: 55px;
+color: rgb(255, 255, 255);
+}
+
+.fit h2{
+  font-size: 15px;
+  margin-top: 30px;
+  color: rgb(185, 185, 185);
+  }
+
+.ftd{
+text-align: center;
+color: rgb(185, 185, 185);
+margin-top: 20px;
+margin-bottom: 20px;
+}

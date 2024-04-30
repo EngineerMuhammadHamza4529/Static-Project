@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflection</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <link rel="stylesheet" href="assets/style/contact us page style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="icon" href="assets/images/logo-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+    <style>
+        .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* scroll button  */
+    #myBtnx {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+
+    }
+.carousel-inner{
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: 0 auto
+}
+.imgd{
+    width: 1000px;
+    height: 95%;
+    margin: 0 auto
+}
+        /* 
+        #myBtnx:hover {
+            background-color: #555;
+        } */
+        /* scroll button  */
+
+
+        /* hover index box  */
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: rgb(2, 1, 1);
+        }
+
+        .box {
+            position: relative;
+            cursor: pointer;
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            transition: all .7s;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+            flex-direction: column;
+            clip-path: circle(0% at 50% 50%);
+            transition: all .5s;
+            font-weight: bolder;
+
+        }
+
+        .box:hover .content {
+            clip-path: circle(100% at 50% 50%);
+        }
+
+        .box:hover img {
+            filter: blur(8px);
+            transform: scale(1.6);
+        }
+
+        .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        .whyus image {
+            image-rendering: crisp-edges;
+        }
+
+        .looks {
+            animation-name: anime;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+            height: 500px;
+        }
+        body::-webkit-scrollbar{
+            background-color: transparent;
+        }
+        body::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(107, 107, 107),yellowgreen,rgb(1, 0, 82));
+            border-radius: 20px;
+            height: 25%;
+        }
+
+.responsive-container-block.bigContainer {
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 10px;
+padding-left: 30px;
+background-image: url("https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb29.png");
+background-size: cover;
+
+}
+
+.responsive-container-block.Container {
+max-width: 800px;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+margin-top: 150px;
+margin-right: auto;
+margin-bottom: 150px;
+margin-left: auto;
+background-color: lightcyan;
+display: flex;
+width: 100%;
+
+}
+.text-blk.heading {
+font-size: 36px;
+line-height: 45px;
+font-weight: 800;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 30px;
+margin-left: 0px;
+text-align: center;
+}
+
+.text-blk.subHeading {
+text-align: center;
+font-size: 18px;
+line-height: 26px;
+margin-bottom: 60px;
+margin-top: 20px;
+}
+
+
+
+
+
+.social-icon:hover {
+cursor: pointer;
+}
+
+.social-icon {
+width: 20px;
+height: 20px;
+margin: 0 50px 0 50px;
+}
+
+@media (max-width: 500px) {
+.responsive-container-block.bigContainer {
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+}
+
+
+
+
+.social-icons-container {
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin: 0 25px 0 25px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+width: 100%;
+}
+
+
+
+
+
+}
+</style>
+</head>
+<body  style="background-color:rgb(173, 169, 170);">
+
+ <!-- Navbar Start -->
+ <marquee directtion="right" style="background-color:rgb(173, 169, 170);">info@mirrorshop.com &nbsp; info@mirrorshop.com  &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com&nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com
+    &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com </marquee>
+   <nav nav class="navbar sticky-top shadow navbar-expand-md navbar-light" style="background-color: rgb(88, 88, 88);">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+    aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="myNavbarToggler7">
+
+        <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+                <a class=" Under-line  nav-link active" href="index.html" target="blank">Home</a>
+            </li>
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Categories
+              </a>
+              <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="wooden framed miirror.html"> Wooden Framed Mirrors </a></li>
+                  <li> <a class="dropdown-item" href="acrylic mirror.html"> Acrylic Bordered Mirrors </a></li>
+                  <li> <a class="dropdown-item" href="Metal Bordered.html"> Metal Bordered Mirrors </a></li>
+                  <li> <a class="dropdown-item" href="Decorative Mirror.html"> Decorative Mirrors </a></li>
+                  <li> <a class="dropdown-item" href="led mirror.html"> LED Mirrors </a></li>
+                  <li> <a class="dropdown-item" href="bluetooth mirror.html"> Bluetooth Mirrors </a></li>
+              </ul>
+          </li>
+            <li class="nav-item dropdown" id="myDropdown">
+              <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mirrors
+              </a>
+              <ul class="dropdown-menu">
+                  <li> <a class="dropdown-item" href="Drawing room.html">  Drawing/living room mirrors</a></li>
+                  <li> <a class="dropdown-item" href="bathroom mirror.html">  Bathroom mirrors</a></li>
+                  <li> <a class="dropdown-item" href="Dressing room.html">  Dressing mirrors</a></li>
+                  <li> <a class="dropdown-item" href="bedroom.html">  Bedroom mirrors</a></li>
+              </ul> 
+          </li>
+            <a class="d-none d-lg-block" href="index.html" target="blank">
+                <img src="assets/images/footer logo.PNG" width="150px" alt="">
+            </a>
+      
+          <li class="nav-item dropdown" id="myDropdown">
+            <a class="nav-link dropdown-toggle" href="eporiums.html" data-bs-toggle="dropdown"> Emporiums
+            </a>
+            <ul class="dropdown-menu">
+                <li> <a class="dropdown-item" href="eporiums.html"> Karachi </a></li>
+                <li> <a class="dropdown-item" href="eporiums.html"> Lahore </a></li>
+                <li> <a class="dropdown-item" href="eporiums.html"> Islamabad </a></li>
+                <li> <a class="dropdown-item" href="eporiums.html"> Peshawar </a></li>
+                <li> <a class="dropdown-item" href="eporiums.html"> Rawalpindi </a></li>
+                <li> <a class="dropdown-item" href="eporiums.html"> Multan </a></li>
+            </ul>
+        </li>
+            <li class="nav-item">
+                <a class=" Under-line nav-link active" href="about us.html" target="blank">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class=" Under-line nav-link active" href="contact us.html" target="blank">Contact us</a>
+          </li>
+        </ul>
+</nav>
+<!-- Navbar End -->
+
+<div class="responsive-container-block bigContainer">
+<div class="responsive-container-block Container">
+  <p class="text-blk heading">
+    About Us
+  </p>
+  <p class="text-blk subHeading">
+    We are computer programmers who specialize in website design.<br>Our duties include determining the structure and design of web pages, striking a balance between functional and aesthetic design, and ensuring web design is optimized for smartphones.
+
+  </p>
+  <div class="social-icons-container">
+    <a class="social-icon">
+      <img class="socialIcon image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb33.png">
+    </a>
+    <a class="social-icon">
+      <img class="socialIcon image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb34.png">
+    </a>
+    <a class="social-icon">
+      <img class="socialIcon image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb35.png">
+    </a>
+    <a class="social-icon">
+      <img class="socialIcon image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb36.png">
+    </a>
+  </div>
+</div>
+</div>
+
+
+<!--Footer start-->
+<section class="footer">
+<!-- Footer -->
+<footer class="bg-light text-dark">
+<!-- Grid container -->
+<div class="container p-4">
+  <!--Grid row-->
+  <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+
+          <p>
+              <img src="assets/images/footer logo.PNG" alt="">
+          </p>
+          <br>
+          <br>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="font: size 20px; margin-top: 20px;">
+          <h3 class="text-uppercase">Products</h3>
+
+          <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+              <li>
+                  <a href="bathroomwall1.html" class="text-dark" style="text-decoration: none;">Bathroom
+                      Mirrors</a>
+              </li>
+              <li>
+                  <a href="kitchenwall1.html" class="text-dark" style="text-decoration: none;">Kitchen
+                      Mirrors</a>
+              </li>
+              <li>
+                  <a href="tac1.html" class="text-dark" style="text-decoration: none;">Wall Mirrors</a>
+              </li>
+              <li>
+                  <a href="coolroof1.html" class="text-dark" style="text-decoration: none;"> Dining Room
+                      Mirrors</a>
+              </li>
+              <li>
+                  <a href="eporiums.html" class="text-dark" style="text-decoration: none;">Emporiums</a>
+              </li>
+
+          </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style=" margin-top: 20px;">
+          <h3 class="text-uppercase">Information</h3>
+
+          <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+
+              <li>
+                  <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+              </li>
+              <li>
+                  <a href="about us.html" class="text-dark" style="text-decoration: none;">About us</a>
+              </li>
+              <li>
+                  <a href="contact us.html" class="text-dark" style="text-decoration: none;">Contact
+                      Us</a>
+              </li>
+            
+
+          </ul>
+      </div>
+      <h3 class="text-uppercase">OUR LOCATION</h3>
+
+      <ul class="list-unstyled mb-0">
+<li>
+<h5>  <a>A-240 Block D North Nazimabad Town, Karachi, Karachi City, Sindh 74700 </a></h5>
+</li>
+
+
+</ul>
+</div>
+
+
+<div class=" col-sm-12" style="text-align: center; padding: 10px;">
+          <div class="row">
+              <div class="col-sm-12" style="width: 10%;  display: flex;">
+                  <img src="assets/images/facebook (3).png" alt="">
+                  <img src="assets/images/youtube.png" alt="" style="padding-left: 20px;">
+                  <img src="assets/images/whatsapp.png" alt="" style="padding-left: 20px;">
+                  <img src="assets/images/instagram.png" alt="" style="padding-left: 20px;">
+                  <img src="assets/images/twitter.png" alt="" style="padding-left: 20px;">
+              </div>
+          </div>
+  </div>
+</div>
+
+
+
+<div class="text-center p-3" style="text-decoration: none;" >
+© 2024 
+Copyright © 2024 Clear Reflection & Mirrors Limited | All Rights Reserved
+</div>
+
+</footer>
+
+</section>
+<!--Footer end-->
+
+
+
+<script src="https://ai.mobirise.com/assets/startm5/smoothscroll/smooth-scroll.js?v=lq0b9jj6"></script>
+<button onclick=" topFunction()" id="myBtnx" title="Go to top">
+<div class="imgy" style="width:20px ; height: 20px;"><img src="assets/images/arrow.png" alt=""
+  width="30px" style="margin-left:-5px;"></div>
+</button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtnx");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+  } else {
+      mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+</body>
+</html>

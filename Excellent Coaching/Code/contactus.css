@@ -1,0 +1,260 @@
+
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+  }
+ 
+  header{
+    background: black;
+    padding: 10px;
+  
+  }
+  #nav{
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    background-color: #ffffff;
+    color: #000000;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+  }
+  .error {
+    color: red;
+}
+
+.form-container{
+  background-color: white;
+  width: 400px;
+  margin: 35px auto;
+  padding: 10px;
+}
+
+input[type="text"],input[type="email"]
+{
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav .nav-link {
+   font-family: nexa;
+   border: 2px solid rgb(20, 190, 190);
+  
+   font-size: 1.3rem;
+  }
+  
+  nav ul li a:hover{
+  background-color: rgb(20, 190, 190) ;
+  border-color: white;
+  transition: all 1s;
+   
+  }
+  #container{
+    margin: 30px;
+  }
+  
+  .banner{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+  }
+  
+  
+  #banner h2{
+    text-align: center;
+    margin: 20px;
+  }
+  section .h1 {
+    font-weight: bold;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: red;
+  }
+  
+  .card{
+    transition: all 0.3s;
+  }
+  .card:hover{
+    transform: scale(1.15);
+  }
+  .card-title {
+    color: red;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container p {
+    color: rgba(0, 0, 0, 0.486);
+  }
+  .contactdiv{
+    padding: 10px;
+  }
+  
+  .footer {  background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 100px 0;
+  }
+  
+  .box {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+  }
+  
+  .single-box p {
+    color: #ffffff;
+    line-height: 1.9;
+  }
+  
+  .single-box h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .single-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: 100;
+  }
+  
+  .single-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  #basic-addon2 {
+    background-color: #fe1e4f;
+    color: #fff;
+  }
+  
+  .socials i {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .icon1:hover {
+    color: blue;
+    background-color: white;
+  }
+  
+  .icon2:hover {
+    color: rgb(192, 66, 8);
+    background-color: white;
+  }
+  
+  .icon3:hover {
+    color: rgb(216, 38, 11);
+    background-color: white;
+  }
+  
+  .icon4:hover {
+    color: rgb(58, 114, 211);
+    background-color: white;
+  }
+  
+  .btn-dark:hover {
+    background-color: rgb(5, 167, 167);
+  }
+  
+  .one {
+    text-align: right;
+  }
+  
+  
+  
+  /* media queries */
+  @media(min-width:992px) {
+    .nav-item {
+      border-bottom: none;
+    }
+  }
+  
+  
+  .contact{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+.contact-map iframe{
+    margin-top: 100px;
+}
+.contact-form h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #f9004d;
+}
+.contact-form p{
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.form{
+    color: #fff;
+    background-color: #101010;
+    text-align: center;
+}
+.form p{
+    margin-top: 20px;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+}

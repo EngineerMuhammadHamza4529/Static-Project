@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ---------Scrollup------------ */
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    background-image: url(Images/Scrollup.png);
+    height: 38px;
+    width: 38px;
+}
+/* -----------Header----------- */
+.nav-link{
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link:hover{
+    color: red;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    color: red;
+    font-weight: bold;
+}
+/* ------------------Section 1-------------------- */
+#Contact h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid red;
+}
+#Contact h1 span{
+ color: red; 
+}
+.google-maps{
+    width: 100%;
+    height: 500px;
+}
+#Contact h3{
+    color: red;
+    text-align: center;
+}
+#Contact p{
+    text-align: center;
+    font-weight: 500;
+}
+/* --------------Section 2---------------- */
+
+.error {
+    color: red;
+    font-weight: 600;
+}
+
+
+#contact-form{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5) ;
+}
+#contact-form label{
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+}
+
+input[type="text"],input[type="email"]{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+.submit{
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    width: 160px;
+
+    font-weight: 600;
+    color: white;
+}
+/* ---------Footer---------- */
+#content-Two{
+    background-color: black;
+    color: white;
+}
+#content-Two img{
+    padding-left: 100px;
+}
+#content-Two a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#content-Two a:hover{
+    color: rgb(187, 4, 4);
+}
+#content-Two p #fIcon:hover{
+   color: blue;
+   
+}
+#content-Two p #wIcon:hover{
+    color: green;
+ }
+#content-Two p #twIcon:hover{
+    color: skyblue;
+ }
+ #content-Two p #iIcon:hover{
+    color: yellow;
+ }
+ #copyRight p{
+    color: black;
+    text-align: center;
+    font-weight: 600;
+ }
+
+
+@media screen and (max-width: 700px) {
+    #content-Two img{
+        padding-left: 0;
+    }
+}

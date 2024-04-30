@@ -1,0 +1,38 @@
+/**
+jquery-backToTop themes
+
+@license MIT
+@author Pablo Pizarro @ppizarror.com
+ */
+
+/**
+-------------------------------------------------------------------------------
+Default theme
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-theme-default {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAM1JREFUeNrs12ELgyAQBuDcPx9OxIlrErGfeysQBs4r7zwJohfuo/dEqFcKAIYjchsOygVTcl9Ks1evm4tRGn55cHpwUAP/Mb1hC3hsL9jBfpw07KE+XgoOQE9ohV/Az7iUosIqLWzNG8MxNIJcYgkvoVNlw0+qmkw5nsNzZaM5NVLENSjMeXrKW2LDEdkstfuCBW8ej8qTQIZHwtUapODAmGC+FfbAm9drPbmwa0CxibYLWwG0NMM3YSOI5l8tKKw7oMXe6vqTOD38FWAAl8JSohyMtPcAAAAASUVORK5CYII=') no-repeat center 43%;
+    border-radius: 50%;
+}
+
+.jquery-back-to-top-theme-default:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.40);
+}
+
+/**
+-------------------------------------------------------------------------------
+Font-awesome theme
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-theme-fawesome {
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    border-radius: 25%;
+    font-size: 150%;
+}
+
+.jquery-back-to-top-theme-fawesome i {
+    display: inline-block;
+}

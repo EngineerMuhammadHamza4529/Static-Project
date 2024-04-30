@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Clear Reflection</title>
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <link rel="stylesheet" href="assets/style/contact us page style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="icon" href="assets/images/logo-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+  
+
+  <style>
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* scroll button  */
+    #myBtnx {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+
+    }
+    body {
+  font-family: sans-serif;
+}
+.form-container {
+  width: 50%;
+  margin-top: -55px;
+  padding: 1%;
+
+}
+label {
+  display: block;
+  margin-top: 25px;
+  font-size: 20px;
+}
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid #5ace0d;
+}
+button {
+  height: 50px;
+  border-radius: 1px;
+  color: #ffffff;
+  background: rgb(16, 214, 9);
+  line-height: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(221, 11, 11);
+  margin-top: 2px;
+  transition: color .4s ease-out, background .4s ease-out; 
+}
+body::-webkit-scrollbar{
+            background-color: transparent;
+        }
+        body::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(107, 107, 107),yellowgreen,rgb(1, 0, 82));
+            border-radius: 20px;
+            height: 25%;
+        }
+button:hover {
+  color: rgb(241, 23, 23);
+  background: #fff;
+}
+.errors {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+.error {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+} 
+    /* 
+        #myBtnx:hover {
+            background-color: #555;
+        } */
+    /* scroll button  */
+  </style>
+</head>
+
+
+  <body style="background-color: rgb(173, 169, 170);"> 
+    <!-- Navbar Start -->
+    <marquee directtion="right" style="background-color:rgb(173, 169, 170);">info@mirrorshop.com &nbsp; info@mirrorshop.com  &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com&nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com
+     &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com </marquee>
+    <nav nav class="navbar sticky-top shadow navbar-expand-md navbar-light" style="background-color: rgb(88, 88, 88);">
+     
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+     aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+ </button>
+     <div class="collapse navbar-collapse" id="myNavbarToggler7">
+
+         <ul class="navbar-nav mx-auto align-items-center">
+             <li class="nav-item">
+                 <a class=" Under-line  nav-link active" href="index.html" target="blank">Home</a>
+             </li>
+             <li class="nav-item dropdown" id="myDropdown">
+               <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Categories
+               </a>
+               <ul class="dropdown-menu">
+                   <li> <a class="dropdown-item" href="wooden framed miirror.html"> Wooden Framed Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="acrylic mirror.html"> Acrylic Bordered Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="Metal Bordered.html"> Metal Bordered Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="Decorative Mirror.html"> Decorative Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="led mirror.html"> LED Mirrors </a></li>
+                   <li> <a class="dropdown-item" href="bluetooth mirror.html"> Bluetooth Mirrors </a></li>
+               </ul>
+           </li>
+             <li class="nav-item dropdown" id="myDropdown">
+               <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mirrors
+               </a>
+               <ul class="dropdown-menu">
+                   <li> <a class="dropdown-item" href="Drawing room.html">  Drawing/living room mirrors</a></li>
+                   <li> <a class="dropdown-item" href="bathroom mirror.html">  Bathroom mirrors</a></li>
+                   <li> <a class="dropdown-item" href="Dressing room.html">  Dressing mirrors</a></li>
+                   <li> <a class="dropdown-item" href="bedroom.html">  Bedroom mirrors</a></li>
+               </ul> 
+           </li>
+             <a class="d-none d-lg-block" href="index.html" target="blank">
+                 <img src="assets/images/footer logo.PNG" width="150px" alt="">
+             </a>
+       
+           <li class="nav-item dropdown" id="myDropdown">
+             <a class="nav-link dropdown-toggle" href="eporiums.html" data-bs-toggle="dropdown"> Emporiums
+             </a>
+             <ul class="dropdown-menu">
+                 <li> <a class="dropdown-item" href="eporiums.html"> Karachi </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Lahore </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Islamabad </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Peshawar </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Rawalpindi </a></li>
+                 <li> <a class="dropdown-item" href="eporiums.html"> Multan </a></li>
+             </ul>
+         </li>
+             <li class="nav-item">
+                 <a class=" Under-line nav-link active" href="about us.html" target="blank">About us</a>
+             </li>
+             <li class="nav-item">
+               <a class=" Under-line nav-link active" href="contact us.html" target="blank">Contact us</a>
+           </li>
+         </ul>   
+ </nav>
+ <!-- Navbar End -->
+  
+
+  <div class="container-fluid" style="position: sticky; color: aliceblue;">
+    <img src="assets/images/contact-bg.png" alt="Snow" style="width:100%">
+    <div class="centered" style="font-size:xx-large ;"><b>Contact Us</b></div>
+  </div>
+  <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-5" style=" margin-top: -74px;">
+          <div class="contact-info h-100">
+            <h3 style="font-size: 45px;">CONTACT US</h3>
+            <p class="mb-5" style="font-size: 14px;">Mirrors offers guaranteed competitive prices and most reliable
+              services and products. We are confident to offer very short lead times on all products.</p><br>
+
+            <p style="font-weight: bold; margin-top: -27px;">Please write to us in case of any query or order</p> <br>
+            <ul class="list-unstyled" style="margin-left:-15px ;">
+              <li class="d-flex">
+                <span class="wrap-icon icon-room mr-3"></span>
+                <span class="text"><img src="assets/images/location.png" alt="" width="30px" height="30px"
+                    style="margin-left: -5px;"><a class="" style="color: black; font-size:14px ;"
+                    href="https://www.google.com/maps/place/Aptech+Computer+Education+North+Nazimabad+Center/@24.9273238,67.0308583,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33f90157042d3:0x93d609e8bec9a880!8m2!3d24.9273941!4d67.032944"> North Nazimabad Center, Block A North Nazimabad Town, Karachi </a> <br>
+                  <br></span>
+              </li>
+
+              <li class="d-flex">
+                <span class="wrap-icon icon-phone mr-3"></span>
+                <span class="text"><img src="assets/images/telephone.png" alt="" width="30px" height="30px"
+                    style="margin-left: -9px;">+92 333-290-5807</span> <br> <br>
+              </li>
+              <li class="d-flex">
+                <span class="wrap-icon icon-envelope mr-3"></span>
+                <span class="text"><img src="assets/images/messages.png" alt="" width="30px" height="30px"
+                    style="margin-left: -5px;">info@mirrorshop.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-container">
+          <b><h1>Contact Form</h1></b>
+          <form name="contactForm" method="post" onsubmit = "return validate()">
+            <label for="name">* Name</label>
+            <input type="text" id="names" pattern="[A-Za-z ]+" title="only letters and spaces are allowed" name="name" class="input" required>
+
+        
+            <label for="email">* Email</label>
+            <input type="email" id="email" name="email" class="input" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="plzz complete your email" required>
+  
+        
+            <label for="phone">* Phone</label>
+            <input type="tel"  id="tell" name="phone" class="input" required>
+
+
+            <label for="subject">* Message</label>
+            <textarea name="message" id="msg" class="input" requi></textarea>
+
+        
+            <button type="submit" value="Submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-md-12">
+        <div id="map" class="z-depth-1-half map-container">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57866.5990688707!2d67.03210916873013!3d24.977596903364205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e0!3m2!1sen!2s!4v1652178563501!5m2!1sen!2s"
+              width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+      <br><br>
+
+
+
+
+
+  <!--Footer start-->
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="bg-light text-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+
+                    <p>
+                        <img src="assets/images/footer logo.PNG" alt="">
+                    </p>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="font: size 20px; margin-top: 20px;">
+                    <h3 class="text-uppercase">Products</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+                        <li>
+                            <a href="bedroom.html" class="text-dark" style="text-decoration: none;">Bedroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="led mirror.html" class="text-dark" style="text-decoration: none;">Led
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bluetooth mirror.html" class="text-dark" style="text-decoration: none;">Bluetooth Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bathroom mirror.html" class="text-dark" style="text-decoration: none;"> bathroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="eporiums.html" class="text-dark" style="text-decoration: none;">Emporiums</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style=" margin-top: 20px;">
+                    <h3 class="text-uppercase">Information</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+
+                        <li>
+                            <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html" class="text-dark" style="text-decoration: none;">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact us.html" class="text-dark" style="text-decoration: none;">Contact
+                                Us</a>
+                        </li>
+                      
+
+                    </ul>
+                </div>
+                <h3 class="text-uppercase">OUR LOCATION</h3>
+
+                <ul class="list-unstyled mb-0">
+  <li>
+    <h5>  <a>A-240 Block D North Nazimabad Town, Karachi, Karachi City, Sindh 74700 </a></h5>
+  </li>
+
+
+</ul>
+</div>
+
+
+<div class=" col-sm-12" style="text-align: center; padding: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12" style="width: 10%;  display: flex;">
+                            <img src="assets/images/facebook (3).png" alt="">
+                            <img src="assets/images/youtube.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/whatsapp.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/instagram.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/twitter.png" alt="" style="padding-left: 20px;">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-center p-3" style="text-decoration: none;" >
+        © 2024 
+       Copyright © 2024 Clear Reflection & Mirrors Limited | All Rights Reserved
+      </div>
+
+    </footer>
+ 
+  </section>
+   <!--Footer end-->
+  <button onclick="topFunction()" id="myBtnx" title="Go to top">
+    <div class="imgy" style="width:20px ; height: 20px;"><img src="assets/images/arrow.png" alt="" width="30px"
+        style="margin-left:-5px;"></div>
+  </button>
+
+
+  <script src="https://ai.mobirise.com/assets/startm5/smoothscroll/smooth-scroll.js?v=lq0b9jj6"></script>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtnx");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  //   function validate() {
+  //   names = document.getElementById("names").value
+  //   email = document.getElementById("email").value
+  //   tell = document.getElementById("tell").value
+  //   msg = document.getElementById("msg").value
+
+  //   if (names.length < 3) {
+  //     alert("your username is too short")
+  //     return false
+  //   }
+  //   if (email.length < 3) {
+  //     alert("your email is too short")
+  //     return false
+  //   }
+  //   if (tell.length < 3) {
+  //     alert("your PhoneNumber is too short")
+  //     return false
+  //   }
+  //   if (msg.length < 10) {
+  //     alert("your Massage is too short")
+  //     return false
+  //   }
+  // }
+
+    
+  </script>
+
+</body>
+
+</html>

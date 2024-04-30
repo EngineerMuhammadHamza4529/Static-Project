@@ -1,0 +1,107 @@
+/**
+jquery-backToTop main classes
+
+@license MIT
+@author Pablo Pizarro @ppizarror.com
+ */
+
+/**
+-------------------------------------------------------------------------------
+Main class
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top {
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: clip;
+    visibility: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.jquery-back-to-top i {
+    display: none;
+}
+
+/**
+-------------------------------------------------------------------------------
+Basic statuses
+-------------------------------------------------------------------------------
+ */
+.jquery-back-to-top-status-on {
+    animation-iteration-count: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.jquery-back-to-top-status-off {
+    animation-iteration-count: 1;
+    transition: visibility .4s;
+    visibility: hidden;
+}
+
+/**
+-------------------------------------------------------------------------------
+Fade-in CSS implementation
+-------------------------------------------------------------------------------
+ */
+@-moz-keyframes jquery-back-to-top-fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes jquery-back-to-top-fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/**
+-------------------------------------------------------------------------------
+Fade-out CSS implementation
+-------------------------------------------------------------------------------
+ */
+@-moz-keyframes jquery-back-to-top-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes jquery-back-to-top-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes jquery-back-to-top-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

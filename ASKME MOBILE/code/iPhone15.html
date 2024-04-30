@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------Bootstrap icon--------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- ---------Bootstrap all cdn----------- -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- ---------External css file-------------- -->
+    <link rel="stylesheet" href="iPhone15ProMax-style.css">
+    <!-- ---------JQuery--------- -->
+    <script src="JS/jquery.min.js"></script>
+    <!-- ----------JQuery Scrollup Plugin------------- -->
+    <script src="JS/jquery.scrollUp.min.js"></script>
+    <title>iPhone 15</title>
+</head>
+<body>
+    <!-- ------------Header----------- -->
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-lg-4" href="Home.html"><img class="pe-3" src="img/logo.png">ASK <span>ME</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BRANDS
+                </a>
+                <ul class="dropdown-menu bg-black">
+                  <li><a class="dropdown-item" href="iPhone.html">iPhone</a></li>
+                  <li><a class="dropdown-item" href="samsung.html">Samsung</a></li>
+                  <li><a class="dropdown-item" href="oppo.html">Oppo</a></li>
+                  <li><a class="dropdown-item" href="nokia.html">Nokia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Compare.html">COMPARISON PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOGS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- -----------------Add to Cart------------------ -->
+    <div class="container mt-5" id="addCart">
+    <div class="row">
+    <div class="col-lg-5 d-flex justify-content-center align-content-center" id="parent">
+      <img src="MobileImage/iphone15.jpg">
+    </div>
+    <div class="col-lg-7 mt-5">
+        <h3>iPhone 15 256 GB Apple official 1 year Mercantile warranty PTA APPROVED.</h3>
+        <div class="star">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-half chacked"></i>
+          <i class="bi bi-star chacked"></i>
+          (5)
+        </div>
+        <h6>Brand: <span>Apple</span></h6>
+        <hr>
+        <h4><span class="text-muted">Rs. 400,000</span>  Rs. 360,900</h4>
+        <p>Color: <span style="color:#797982;">Natural Titanium</span></p>
+        <p>Storage: 256 GB</p>
+        <p>Quantity:</p>
+        <div class="input-group">
+          <button id="decrement">-</button>
+          <input type="number" id="input" value="0" readonly>
+          <button id="increment">+</button>
+        </div>
+         <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" id="viewDetail" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        VIEW DETAILS
+        </button>
+      <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">DETAILS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="my-5">
+              <li>Display TypeLTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)</li>
+              <li>Size6.7 inches, 110.2 cm2 (~89.8% screen-to-body ratio)</li>
+              <li>Resolution1290 x 2796 pixels, 19.5:9 ratio (~460 ppi density)</li>
+              <li>ProtectionCeramic Shield glass</li>
+              <li>OSiOS 17</li>
+              <li>ChipsetApple A17 Pro (3 nm)</li>
+              <li>Dimensions159.9 x 76.7 x 8.3 mm (6.30 x 3.02 x 0.33 in)</li>
+              <li>GPUApple GPU (6-core graphics)</li>
+              <li>RAM8GB</li>
+              <li>Primary Camera48 MP, f/1.8, 24mm (wide), 1/1.28", 1.22µm, dual pixel PDAF, sensor-shift OIS, 12 MP, f/2.8, 120mm (periscope telephoto), 1.12µm, dual pixel PDAF, 3D sensor‑shift OIS, 5x optical zoom, 12 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55", 1.4µm, dual pixel PDAF</li>
+              <li>Primary Camera FeaturesDual-LED dual-tone flash, HDR (photo/panorama)</li>
+              <li>Primary Camera Video4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 60fps), ProRes, Cinematic mode (4K@24/30fps), 3D (spatial) video, stereo sound rec.</li>
+              <li>Secondary Camera12 MP, f/1.9, 23mm (wide), 1/3.6", PDAF, OIS</li>
+            <li>Secondary Camera FeaturesHDR, Cinematic mode (4K@24/30fps)</li>
+            <li>Secondary Camera Video4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <a href="img/iphone.docx" type="button" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-danger" id="atc" onclick="hello()">ADD TO CART</button>
+  </div>
+  </div>
+
+    <!-------------------- customer  --------------->
+    <div class="row mt-5">
+      <div class="col-12 mb-5">
+      <h2 class="ms-5">Customer Ratings</h2>
+      <hr>
+      <div class="ms-5 mt-5 review1"><img src="img/Person1.jpg">
+        <div class="star d-inline ms-5">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star chacked"></i>
+        </div> 
+      </div>
+      <div class="ms-5 mt-5 review1"><img src="img/Person2.jpg">
+        <div class="star d-inline ms-5">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star chacked"></i>
+        </div> 
+      </div>
+      <div class="ms-5 mt-4 review1"><img src="img/Person3.jpg">
+        <div class="star d-inline ms-5">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+        </div> 
+      </div>
+      <div class="ms-5 mt-4 review1"><img src="img/Person4.jpg">
+        <div class="star d-inline ms-5">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star chacked"></i>
+        </div> 
+      </div>
+      <div class="ms-5 mt-4 review1"><img src="img/Person5.jpg">
+        <div class="star d-inline ms-5">
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star-fill chacked"></i>
+          <i class="bi bi-star chacked"></i>
+        </div> 
+      </div>
+    </div>
+    </div>
+    <div class="row" id="product-cards">
+    <h1 class="text-center mb-5">More Products</h1> 
+    <div class=" col-lg-3 col-sm-6">
+      <div class="card">
+        <img src="MobileImage/iphone15ProMax.jpg">
+        <div class="card-body text-center">
+          <h3>iPhone15ProMax</h3>
+          <h5>Rs. 790,500</h5>
+          <a href="iPhone15ProMax.html" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 ">
+      <div class="card">
+        <img src="MobileImage/iphone14ProMax.jpg">
+        <div class="card-body text-center">
+          <h3>iPhone14ProMax</h3>
+          <h5>Rs. 678,900</h5>
+          <a href="iPhone14ProMax.html" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    <div class=" col-lg-3 col-sm-6 mb-5">
+      <div class="card">
+        <img src="MobileImage/iphone13ProMax.jpg">
+        <div class="card-body text-center">
+          <h3>iPhone13ProMax</h3>
+          <h5>Rs. 320,000</h5>
+          <a href="iPhone13ProMax.html" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 ">
+      <div class="card">
+        <img src="MobileImage/iphone15Pro.jpg">
+        <div class="card-body text-center">
+          <h3>iPhone 15 Pro</h3>
+          <h5>Rs. 665,000</h5>
+          <a href="iPhone15Pro.html" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    <!-- ------------Footer--------------- -->
+    <div class="container-fluid" id="content-Two">
+    <div class="row mb-5">
+    <div class="col-md-4 mt-4">
+        <img src="img/logo final2 100px.png" alt="logo">
+    </div>
+    <div class="col-md-2 mt-5 ">
+        <h5>Brands</h5>
+        <p><a href="iPhone.html">iPhone</a></p>
+        <p><a href="samsung.html">Samsung</a></p>
+        <p><a href="oppo.html">Oppo</a></p>
+        <p><a href="nokia.html">Nokia</a></p>
+    </div>
+    <div class="col-md-2 mt-5">
+        <h5>QUICK LINKS</h5>
+        <p><a href="Home.html">Home</a></p>
+        <p><a href="aboutus.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="blog.html">Blogs</a></p>
+       
+    </div>
+    <div class="col-md-4 mt-5">
+        <h5>FOLLOW US</h5>
+        <p class="mt-5"><i class="bi bi-facebook ms-lg-3 ms-2" id="fIcon"></i><i class="bi bi-whatsapp ms-lg-5 ms-2 " id="wIcon"></i><i class="bi bi-twitter ms-lg-5 ms-2" id="twIcon"></i><i class="bi bi-instagram ms-lg-5 ms-2" id="iIcon"></i><i class="bi bi-tiktok ms-lg-5 ms-2"></i></p>
+    </div>
+    </div>
+    <div class="row bg-light" id="copyRight">
+    <div class="col-12 mt-4 mb-2">
+        <p><i class="bi bi-c-circle"></i>2023 ASKME. All Rights Reserved.</p>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<script>
+  function hello(){
+        alert("Product has been Added Successfully!");
+      }
+  // -- ----------Quentity---------  --
+let counter = 0;
+
+function increment() {
+  counter++;
+}
+
+function decrement() {
+  counter--;
+}
+
+function get() {
+  return counter;
+}
+
+const inc = document.getElementById("increment");
+const input = document.getElementById("input");
+const dec = document.getElementById("decrement");
+
+inc.addEventListener("click", () => {
+  increment();
+  input.value = get();
+});
+
+dec.addEventListener("click", () => {
+  if (input.value > 0) {
+    decrement();
+  }
+  input.value = get();
+});
+
+// -----------Scrollup------------
+    $(function () {
+            $.scrollUp({
+                scrollDistance: 200,
+                scrollSpeed: 500,
+                scrollImg: true
+            });
+    });
+ </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+    <style>
+         
+.form-container {
+  width: 100%;
+  margin: auto;
+  padding: 3%;
+  border: 1px solid #f7f7f7;
+  color: black;
+  border-radius: 5px;
+  background: #f7f7f7;
+}
+/* label {
+  display: block;
+  margin-top: 25px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21px;
+} */
+.form-container input, textarea {
+  width: 50%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+.form-container button {
+  width: 25%;
+  height: 50px;
+  border-radius: 4px;
+  color: black;
+  background: lightskyblue;
+  line-height: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-top: 25px;
+  transition: color .4s ease-out, background .2s ease-out;
+  margin-left: 33%;
+}
+.form-container button:hover {
+  color: black;
+  background: rgb(55, 79, 216);
+}
+.errors {
+  display: block;
+  color: rgb(248, 100, 77);
+  margin-top: 5px;
+}
+.error {
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+}
+ .form-container input{
+  margin-left: 1px;
+}
+#subject{
+  width: 90%;
+}
+h1{
+  text-align: center;
+  
+}
+    </style>
+
+</head>
+<body>
+    <!-- <header>FIRST FASHION IS LIVE</header> -->
+       <nav class="navbar navbar-expand-xl navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#"><span class="logo">First</span>Fashion</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item1">
+                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                 </li>
+                 <li class="nav-item2 dropdown">
+                   <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Category
+                   </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="adidas.html">ADIDAS</a></li>
+                     <li><a class="dropdown-item" href="nike.html">NIKE</a></li>
+                     <li><a class="dropdown-item" href="levis.html">LEVI'S</a></li>
+                   </ul>
+                 </li>
+                 <li class="nav-item3">
+                   <a class="nav-link active" href="product.html">Fashion Products</a>
+                 </li>
+                 <li class="nav-item4">
+                   <a class="nav-link active" href="comparison.html">Product Comparison</a>
+                 </li>
+                 <li class="nav-item5">
+                   <a class="nav-link active" href="contact.html">Contact Us</a>
+                 </li> 
+             </div>
+     <icon class="fa fa-search"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></icon>
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+ <div class="offcanvas-header">
+   <h5 id="offcanvasTopLabel"></h5>
+ </div>
+ <div class="offcanvas-body">
+   <input type="search" placeholder="Search">
+   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+ </div>
+</div>
+           </div>
+         </nav>
+
+         <section id="home">
+          <h1 style="font-size: 60px; font-weight: bold;">Contact Us</h1>
+      </section>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115784.19826579558!2d67.07609599999998!3d24.923340800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1705662314233!5m2!1sen!2s" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="form-container">
+              <h1>Contact Us Directly</h1>
+              <br>
+              <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
+                <!-- <label for="name">* Name</label> -->
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <span class="errors"></span>
+            
+                <!-- <label for="email">* Email</label> -->
+                <input type="text" placeholder="Email address" id="email" name="email">
+                <span class="errors"></span>
+            
+                <!-- <label for="phone">* Phone</label> -->
+                <input type="text" placeholder="Phone number" id="phone" name="phone">
+                <span class="errors"></span>
+                <br>
+                <!-- <label for="subject">* Message</label> -->
+                <textarea placeholder="Message" cols="132" rows="4" name="subject" id="subject"></textarea>
+                <span class="errors"></span>
+            
+                <button type="submit" value="Submit">Send</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="block">
+              <h5><i class="fa-solid fa-home" style="font-size: 30px; color: deepskyblue;"></i>  Shop/no R,114 1st Floor lucky One Mall</h5>
+              <p style="padding-left: 50px;">Main Rashid Minhas Road Karachi,Pakistan</p>
+              <br>
+              <h5><i class="fa-solid fa-phone" style="font-size: 30px; color: deepskyblue;"></i>  +92 3137807349</h5>
+              <p style="padding-left: 50px;">Monday to Sunday 11AM to 10PM</p>
+              <br>
+              <h5><i class="fa-solid fa-envelope" style="font-size: 30px; color: deepskyblue;"></i>  Firstfashion@gmail.com</h5>
+              <p style="padding-left: 50px;">Email us for any Query</p>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    
+      <br>
+
+       <!--Footer section-->
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #0a1125"
+    >
+<section
+       class="d-flex justify-content-between p-4"
+       style="background-color: black"
+       >
+<div class="me-5">
+  <span>Get connected with us on social networks:</span>
+  
+</div>
+<div>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-google"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+</section>
+<section>
+<div class="text-center text-md-start mt-5">
+  
+  <div class="row mt-3">
+    
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+      <h6 class="text-uppercase fw-bold">Fashion Emporium</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 120px; background-color: aquamarine; height: 3px"
+          />
+      <p>
+        Launched in DECEMBER 2023, FIRST FASHION is a high-street brand
+         dedicated to creating beautiful ready to wear garments for everyone.
+          Our clothes embody the grace and sophistication of high profile fashion.
+           We channel a unique color palette, a wide array of designs and quality
+            fabric that contribute to your personal sense of style.
+      </p>
+    </div>
+
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <h6 class="text-uppercase fw-bold">links</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 50px; background-color: aquamarine; height: 3px"
+          />
+          <p>
+            <a href="index.html" class="text-white">Home</a>
+          </p>    
+      <p>
+        <a href="product.html" class="text-white">Fashion Products</a>
+      </p>
+      <p>
+        <a href="comparison.html" class="text-white">Product Comparison</a>
+      </p>
+      <p>
+        <a href="contact.html" class="text-white">Contact Us</a>
+      </p>
+    </div>
+
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <h6 class="text-uppercase fw-bold">Category</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 80px; background-color: aquamarine; height: 3px"
+          />
+      <p>
+        <a href="adidas.html" class="text-white">ADIDAS</a>
+      </p>
+      <p>
+        <a href="nike.html" class="text-white">NIKE</a>
+      </p>
+      <p>
+        <a href="levis.html" class="text-white">LEVI'S</a>
+      </p>
+     
+    </div>
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      <h6 class="text-uppercase fw-bold">Our Contact</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 100px; background-color: aquamarine; height: 3px"
+          />
+      <p><i class="fas fa-home mr-3"></i> Karachi, Lucky One Mall 10012, Pak</p>
+      <p><i class="fas fa-envelope mr-3"></i> Firstfashion@gmail.com</p>
+      <p><i class="fas fa-phone mr-3"></i> + 92300000000</p>
+      <p><i class="fas fa-print mr-3"></i> + 92300000000</p>
+    </div>
+  </div>
+</div>
+</section>
+<div
+   class="text-center p-3"
+   style="background-color: rgba(0, 0, 0, 0.2)"
+   >
+© 2024,Powered by /
+<a class="text-white" href="index.html"><span style="color: aquamarine; font-size: larger;">First</span> Fashion</a>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+      <script src="contact.js"></script>
+
+</body>
+</html>

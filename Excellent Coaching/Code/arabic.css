@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav .nav-link {
+   font-family: nexa;
+   border: 2px solid rgb(20, 190, 190);
+  
+   font-size: 1.3rem;
+  }
+  
+  nav ul li a:hover{
+  background-color: rgb(20, 190, 190) ;
+  border-color: white;
+  transition: all 1s;
+   
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {  background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 100px 0;
+  }
+  
+  .box {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+  }
+  
+  .single-box p {
+    color: #ffffff;
+    line-height: 1.9;
+  }
+  
+  .single-box h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .single-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: 100;
+  }
+  
+  .single-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  #basic-addon2 {
+    background-color: #fe1e4f;
+    color: #fff;
+  }
+  
+  .socials i {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .icon1:hover {
+    color: blue;
+    background-color: white;
+  }
+  
+  .icon2:hover {
+    color: rgb(192, 66, 8);
+    background-color: white;
+  }
+  
+  .icon3:hover {
+    color: rgb(216, 38, 11);
+    background-color: white;
+  }
+  
+  .icon4:hover {
+    color: rgb(58, 114, 211);
+    background-color: white;
+  }
+  
+  .btn-dark:hover {
+    background-color: rgb(5, 167, 167);
+  }
+  
+  .one {
+    text-align: right;
+  }
+  
+  
+  
+  /* media queries */
+  @media(min-width:992px) {
+    .nav-item {
+      border-bottom: none;
+    }
+  }

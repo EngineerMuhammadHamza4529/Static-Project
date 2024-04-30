@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflection</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <link rel="stylesheet" href="assets/style/contact us page style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="icon" href="assets/images/logo-01.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+</head>
+    <style>
+        .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* scroll button  */
+    #myBtnx {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: black;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+
+    }
+.carousel-inner{
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: 0 auto
+}
+.imgd{
+    width: 1000px;
+    height: 95%;
+    margin: 0 auto
+}
+        /* 
+        #myBtnx:hover {
+            background-color: #555;
+        } */
+        /* scroll button  */
+
+
+        /* hover index box  */
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: rgb(2, 1, 1);
+        }
+
+        .box {
+            position: relative;
+            cursor: pointer;
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            transition: all .7s;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+            flex-direction: column;
+            clip-path: circle(0% at 50% 50%);
+            transition: all .5s;
+            font-weight: bolder;
+
+        }
+
+        .box:hover .content {
+            clip-path: circle(100% at 50% 50%);
+        }
+
+        .box:hover img {
+            filter: blur(8px);
+            transform: scale(1.6);
+        }
+
+        .back {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.99) 45%, rgba(133, 134, 135, 0.9864320728291317) 100%);
+        }
+
+        .whyus image {
+            image-rendering: crisp-edges;
+        }
+
+        .looks {
+            animation-name: anime;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+            height: 500px;
+        }
+        body::-webkit-scrollbar{
+            background-color: transparent;
+        }
+        body::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(107, 107, 107),yellowgreen,rgb(1, 0, 82));
+            border-radius: 20px;
+            height: 25%;
+        }
+        .chair{
+            width: 30%;
+            height: 200px;
+            display: flex;
+            gap: 5px;
+        }
+        .chair img{
+            width: 10%;
+            height:  100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid rgb(0, 0, 0);
+            transition: ease-in-out 0.3s;
+            cursor: pointer;
+        }
+        .chair img:hover{
+            width: 100%;
+        }
+
+
+        .cardlast img{
+            width: 300px;
+            height:  250px;
+            border-radius: 20px;
+            border: 5px solid rgb(0, 0, 0);
+
+        }
+        .ourapllication{
+            display: block;
+            margin-left: 40%;
+            margin-right: 40%;
+            /* width: 80%; */
+        }
+        
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+
+
+<body style="background-color: rgb(173, 169, 170);"> 
+       <!-- Navbar Start -->
+       <marquee directtion="right" style="background-color:rgb(173, 169, 170);">info@mirrorshop.com &nbsp; info@mirrorshop.com  &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com&nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com
+        &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com &nbsp; info@mirrorshop.com </marquee>
+       <nav nav class="navbar sticky-top shadow navbar-expand-md navbar-light" style="background-color: rgb(88, 88, 88);">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+        aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="myNavbarToggler7">
+  
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                    <a class=" Under-line  nav-link active" href="index.html" target="blank">Home</a>
+                </li>
+                <li class="nav-item dropdown" id="myDropdown">
+                  <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li> <a class="dropdown-item" href="wooden framed miirror.html"> Wooden Framed Mirrors </a></li>
+                      <li> <a class="dropdown-item" href="acrylic mirror.html"> Acrylic Bordered Mirrors </a></li>
+                      <li> <a class="dropdown-item" href="Metal Bordered.html"> Metal Bordered Mirrors </a></li>
+                      <li> <a class="dropdown-item" href="Decorative Mirror.html"> Decorative Mirrors </a></li>
+                      <li> <a class="dropdown-item" href="led mirror.html"> LED Mirrors </a></li>
+                      <li> <a class="dropdown-item" href="bluetooth mirror.html"> Bluetooth Mirrors </a></li>
+                  </ul>
+              </li>
+                <li class="nav-item dropdown" id="myDropdown">
+                  <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Mirrors
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li> <a class="dropdown-item" href="Drawing room.html">  Drawing/living room mirrors</a></li>
+                      <li> <a class="dropdown-item" href="bathroom mirror.html">  Bathroom mirrors</a></li>
+                      <li> <a class="dropdown-item" href="Dressing room.html">  Dressing mirrors</a></li>
+                      <li> <a class="dropdown-item" href="bedroom.html">  Bedroom mirrors</a></li>
+                  </ul> 
+              </li>
+                <a class="d-none d-lg-block" href="index.html" target="blank">
+                    <img src="assets/images/footer logo.PNG" width="150px" alt="">
+                </a>
+          
+              <li class="nav-item dropdown" id="myDropdown">
+                <a class="nav-link dropdown-toggle" href="eporiums.html" data-bs-toggle="dropdown"> Emporiums
+                </a>
+                <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item" href="eporiums.html"> Karachi </a></li>
+                    <li> <a class="dropdown-item" href="eporiums.html"> Lahore </a></li>
+                    <li> <a class="dropdown-item" href="eporiums.html"> Islamabad </a></li>
+                    <li> <a class="dropdown-item" href="eporiums.html"> Peshawar </a></li>
+                    <li> <a class="dropdown-item" href="eporiums.html"> Rawalpindi </a></li>
+                    <li> <a class="dropdown-item" href="eporiums.html"> Multan </a></li>
+                </ul>
+            </li>
+                <li class="nav-item">
+                    <a class=" Under-line nav-link active" href="about us.html" target="blank">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" Under-line nav-link active" href="contact us.html" target="blank">Contact us</a>
+              </li>
+            </ul>
+
+      
+
+        
+    </nav>
+    <!-- Navbar End -->
+    <br><br<br><br>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5>Explore Our Captivating Categories</h5>
+                <h1 style="color: rgb(6, 3, 56);">SIT IN STYLE AND COMFART </h1>
+                <h6>why chose us</h6>
+                <br>
+                <p>
+                    Explore a world of comfort and style with our exquisite chair collection. From contemporary chic to
+                    timeless classics, each piece is thoughtfully crafted to enhance your space. Whether you seek ergonomic
+                    office solutions or elegant accent chairs, our curated selection ensures a perfect fit for any setting.
+                    Elevate your seating experience and transform your space into a haven of both functionality and aesthetics. </p>
+            </div>
+            <div class="col-md-7">
+    <div class="chair" style="width: 100%;">
+        <img src="assets/images/chair1.jpg" alt="">
+        <img src="assets/images/chair2.jpg" alt="">
+        <img src="assets/images/chair3.jpg" alt="">
+        <img src="assets/images/chair4.jpg" alt="">
+    </div>
+    </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="videolast">
+            <video src="assets/videos/shopping background video.mp4" autoplay muted loop style="width: 50%; display: block; margin: 0 auto; border: 5px solid rgb(0, 0, 0);  border-radius: 20px;"></video>
+    </div>
+  </div>
+</div>
+<br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h5>Make your own fantasy</h5>
+                <h1 style="color: rgb(6, 3, 56);">Bring Standard Home</h1>
+                <h6>design life revolutionary!</h6>
+                <br>
+                <p>Welcome to ClearReflection.com, where style meets clarity in our curated mirror collection.
+                    Transform your space with mirrors that enhance both light and decor.
+                    From modern minimalism to timeless elegance, find the perfect reflection of your style.
+                    Elevate your surroundings and make a statement with ClearReflection.com.
+                    Step into a world where mirrors go beyond reflection to redefine your space with clarity and sophistication. </p>
+            </div>
+            <div class="col-md-5">
+                <video src="assets/videos/Mirrors videos for web first page.mp4" autoplay muted loop style="width: 40%; display: block; margin: 0 auto;"></video>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/image web 3.jpg" class="d-block w-100" alt="..." style="height: 450px;" >
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/image web 1.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/image web 2.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="col-md-12" style="text-align: center; color: black;">
+        <h1>OUR APPLICATION</h1>
+      </div>
+      <div class="ourapllication">
+        <img src="assets/images/our application.PNG" alt="" srcset="" >
+    </div>
+    <div class="col-md-12" style="text-align: center; font-size: 15pt; color: gray;">
+        We,ve our application that allow interested peoples to interact with us in every possible way.
+    </div>
+    <br>
+    <div class="col-md-12">
+        <div class="picture" style="height: 300px; position: relative;">
+            <div class="text"
+                style="position: absolute; top:50%; left: 50%; transform: translate(-50% , -50%); color: white; text-align: center; border-top-left-radius: 70px; border-bottom-right-radius: 70px; background-color: rgb(27, 28, 29); background-size: cover; border: 10px inset black;">
+                <h1 style="margin: 0;">WHY US?</h1>
+                <p>We have the secret formula for wellbeing.Colours and design that
+                    fascinates the viewer which offer a routine of delight! We continue to delight our customers
+                    by also
+                    bringing international products in our field, By offering the best quality and innovative
+                    products
+                    at better prices</p>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="row">
+                <p
+                    style="font-size: 35pt; text-align:center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black;">
+                    Mirrors For Every Considerations</p>
+                <p style="text-align: center;"><span style="color: dodgerblue; font-weight:bold;">Mirrors</span> add
+                    several categories of mirrors with functionality to make every room of your home delightful. With over
+                    7000 different designs. We also have such premium categories packages which make you Glad!</p>
+
+                <br> <br> <br>
+
+                <div class="col-md-4" style="position: relative;">
+                    <a class="" href="wooden framed miirror.html">
+                        <div class="box">
+                            <img src="assets/images/wooden mirrors.avif" class="img-thumbnail" alt="...">
+                            <div class=" content center"
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                                <h2 style="text-align: center; font-weight: bold;">Wooden Framed Mirrors</h2>
+
+
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4" style="position: relative;">
+                <a href="acrylic mirror.html">
+                    <div class="box">
+                        <img src="assets/images/acrylic4.jpg" class="img-thumbnail" alt="..." width="100%">
+                        <div class=" content center"
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                            <h2 style="text-align: center; font-weight: bold;">Acrylic Mirrors</h2>
+
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4" style="position: relative;">
+                <a href="Metal Bordered.html">
+                    <div class="box">
+                        <img src="assets/images/bathroom mirrors.jpg" class="img-thumbnail" alt="..." width="100%">
+                        <div class=" content center"
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                            <h2 style="text-align: center; font-weight: bold;">Metal Bordered Mirror</h2>
+
+
+                        </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="position: relative;">
+            <a href="Decorative Mirror.html">
+                <div class="box">
+                    <img src="assets/images/bedroom mirror.jpg" class="img-thumbnail" alt="..." width="100%">
+                    <div class=" content center"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                        <h2 style="text-align: center; font-weight: bold;">Decorative Mirrors</h2>
+
+
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4" style="position: relative;">
+            <div class="box">
+                <a class="" href="led mirror.html"> <img src="assets/images/led7.jpg" class="img-thumbnail" alt="..."
+                        width="100%">
+                    <div class=" content center"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                        <h2 style="text-align: center; font-weight: bold;">Led Mirrors</h2>
+
+
+                    </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4" style="position: relative;">
+            <a href="bluetooth mirror.html">
+                <div class="box">
+                    <img src="assets/images/out door mirror.jpg" class="img-thumbnail" alt="..." width="100%">
+                    <div class=" content center"
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                        <h2 style="text-align: center; font-weight: bold;">Bluetooth Mirrors</h2>
+
+
+                    </div>
+            </a>
+        </div>
+    </div> 
+
+
+
+    <div class="col-md-4" style="position: relative;">
+        <a href="Drawing room.html">
+            <div class="box">
+                <img src="assets/images/wall mirrors.avif" class="img-thumbnail" alt="..." width="100%">
+                <div class=" content center"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                    <h2 style="text-align: center; font-weight: bold;">Drawing/Living Room Mirrors</h2>
+
+
+                </div>
+        </a>
+    </div>
+</div> 
+    
+
+    <div class="col-md-4" style="position: relative;">
+        <a href="Dressing room.html">
+            <div class="box">
+                <img src="assets/images/exclusive mirror.jpg" class="img-thumbnail" alt="..." width="100%">
+                <div class=" content center"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                    <h2 style="text-align: center; font-weight: bold;">Dressing Mirrors</h2>
+
+
+                </div>
+        </a>
+    </div>
+    </div>
+    <div class="col-md-4" style="position: relative;">
+        <a href="bedroom.html">
+            <div class="box">
+                <img src="assets/images/bedroom mirror.jpg" class="img-thumbnail" alt="..." width="100%">
+                <div class=" content center"
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50% , -50%); color: #000;">
+                    <h2 style="text-align: center; font-weight: bold;">Bedroom Mirrors</h2>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="container">
+        <h1 style="font-size: 40pt; text-align:center; color: black;">Checkout These At</h1>
+        <h1 style="font-size: 40pt; color: black; text-align:center;">25% OFF</h1>
+        <h3 style="text-align:center; font-size:15pt; color: rgb(31, 150, 31);">PACKAGES</h3>        
+    </div>
+
+  
+     <div class="container">
+        <div class="cardlast">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/dining room image 25 % off.jpg" alt="" >
+                </div>
+
+                <div class="col-md-4">
+                    <img src="assets/images/bedroom mirror image 25% off.jpg" alt="">
+                </div>
+
+
+                <div class="col-md-4">
+                    <img src="assets/images/bathroom mirrors 2nd 25% off.webp" alt="" >
+                </div>
+            </div>
+        </div>     
+    </div>
+    <br>
+   
+    <div class="container-fluid"
+        style="background: rgb(2,0,36); background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%); color: white;">
+        <div class="col-md-12">
+            <br> <br> <br>
+            <h1 style="font-size: 50pt; text-align: center;">Services</h1>
+        </div>
+        <br> <br>
+        <div class="row">
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Corporation</h3>
+                <img src="assets/images/team (1).png" alt="" width="25%">
+                <p style="font-size: 12pt;">
+                    We,ve already come a long way ,our experience in this field supports every possible thoughts when it
+                    comes in implementation in progress.
+                </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Free Delivery</h3>
+                <img src="assets/images/delivery-truck (1).png" alt="" srcset="" width="25%">
+                <p>
+                    We have special plans for our subscribers in which the least we offer them a free delivery on their
+                    orders either they ordered in bulk or in least stock.
+                </p>
+            </div>
+            <div class="col-sm-4" style="text-align: center;">
+                <h3>Insurance</h3>
+                <img src="assets/images/life-insurance (1).png" alt="" width="25%">
+                <p>
+                    The insured receives a contract, called the insurance policy, which details the conditions and
+                    circumstances under which the insurer will compensate.
+                </p>
+            </div>
+        </div>
+    </div> 
+
+
+  <!--Footer start-->
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="bg-light text-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+
+
+                    <p>
+                        <img src="assets/images/footer logo.PNG" alt="">
+                    </p>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="font: size 20px; margin-top: 20px;">
+                    <h3 class="text-uppercase">Products</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+                        <li>
+                            <a href="bedroom.html" class="text-dark" style="text-decoration: none;">Bedroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="led mirror.html" class="text-dark" style="text-decoration: none;">Led
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bluetooth mirror.html" class="text-dark" style="text-decoration: none;">Bluetooth Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="bathroom mirror.html" class="text-dark" style="text-decoration: none;"> bathroom
+                                Mirrors</a>
+                        </li>
+                        <li>
+                            <a href="eporiums.html" class="text-dark" style="text-decoration: none;">Emporiums</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style=" margin-top: 20px;">
+                    <h3 class="text-uppercase">Information</h3>
+
+                    <ul class="list-unstyled mb-0" style="font-size: 12px ;">
+
+                        <li>
+                            <a href="index.html" class="text-dark" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li>
+                            <a href="about us.html" class="text-dark" style="text-decoration: none;">About us</a>
+                        </li>
+                        <li>
+                            <a href="contact us.html" class="text-dark" style="text-decoration: none;">Contact
+                                Us</a>
+                        </li>
+                      
+
+                    </ul>
+                </div>
+                <h3 class="text-uppercase">OUR LOCATION</h3>
+
+                <ul class="list-unstyled mb-0">
+  <li>
+    <h5>  <a>A-240 Block D North Nazimabad Town, Karachi, Karachi City, Sindh 74700 </a></h5>
+  </li>
+
+
+</ul>
+</div>
+
+
+<div class=" col-sm-12" style="text-align: center; padding: 10px;">
+                    <div class="row">
+                        <div class="col-sm-12" style="width: 10%;  display: flex;">
+                            <img src="assets/images/facebook (3).png" alt="">
+                            <img src="assets/images/youtube.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/whatsapp.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/instagram.png" alt="" style="padding-left: 20px;">
+                            <img src="assets/images/twitter.png" alt="" style="padding-left: 20px;">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div class="text-center p-3" style="text-decoration: none;" >
+        © 2024 
+       Copyright © 2024 Clear Reflection & Mirrors Limited | All Rights Reserved
+      </div>
+
+    </footer>
+ 
+  </section>
+   <!--Footer end-->
+   <script src="https://ai.mobirise.com/assets/startm5/smoothscroll/smooth-scroll.js?v=lq0b9jj6"></script>
+
+    <button onclick=" topFunction()" id="myBtnx" title="Go to top">
+                <div class="imgy" style="width:20px ; height: 20px;"><img src="assets/images/arrow.png" alt=""
+                        width="30px" style="margin-left:-5px;"></div>
+                </button>
+
+
+
+                <script>
+                        //Get the button
+    var mybutton = document.getElementById("myBtnx");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+              
+              </script>
+
+</body>
+</html>
+
+
+

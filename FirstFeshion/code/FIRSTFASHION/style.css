@@ -1,0 +1,148 @@
+*{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    color: rgb(63, 145, 226); 
+    font-size: 42px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#home{
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+
+#navbarSupportedContent{
+    padding-left: 15%;
+}
+input{
+    width: 40%;
+    height: 40%;
+    border: 2px solid black;
+    margin-top: 25px; 
+    margin-left: 30%; 
+}
+::placeholder{
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+icon{
+    color: black;
+    margin-right: 30px;
+    font-size: x-large;
+}
+#carol h5{
+    font-size: 45px;
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold; 
+}
+#carol p{
+    color: black;
+    font-size: larger;
+    padding-bottom: 20px;
+}
+.container h6:hover{
+    text-decoration: underline;
+}
+#box{
+    width: 500px;
+    height: 570px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#box img{
+    width: 100%;
+    height: 100%;
+    transition: all .2S;
+
+}
+
+#box img:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+
+#show{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#show img{
+    width: 100%;
+    height: 100%;
+    transition: all .4S;
+
+}
+
+#show img:hover{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+
+.nav-item1:hover{
+    text-decoration: underline;
+}
+.nav-item2:hover{
+    text-decoration: underline;
+}
+.nav-item3:hover{
+    text-decoration: underline;
+}
+.nav-item4:hover{
+    text-decoration: underline;
+}
+.nav-item5:hover{
+    text-decoration: underline;
+}
+
+.offcanvas-body input{
+    padding-left: 25px;
+}
+
+@media (max-width: 767.98px) { .border-sm-start-none { border-left: none !important; } }
+
+#compar{
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#compar img{
+    width: 100%;
+    height: 100%;
+    transition: all .3S;
+
+}
+
+#compar img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.block{
+    
+    justify-items: center;
+    margin-top: 25%;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: black;
+}
